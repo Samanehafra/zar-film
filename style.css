@@ -1,4 +1,26 @@
 @font-face {
-  font-family: yekan;
-  src: url("font/BYekan+.ttf") format("truetype");
+    font-family: yekan;
+    src: url("font/BYekan+.ttf") format("truetype");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+body {
+    margin: 0;
+    background: #181c22;
+    color: #e5e5e5;
+    font-family: 'Yekan';
+    text-decoration: none;
+    opacity: 0.92;
+    padding: 0 7px;
+    transition: color 0.2s, opacity 0.15s ease-in-out, transform 0.2s;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 1px solid #e5e5e5;
+    color: #e5e5e5;
 }
