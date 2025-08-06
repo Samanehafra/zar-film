@@ -235,10 +235,10 @@ ul {
   width: 10px;
   height: 10px;
 }
-footer {
+.footer {
   position: sticky;
   bottom: 0;
-  background-color: #787878;
+  background-color: #000000;
   height: 62px;
   width: 90%;
 }
