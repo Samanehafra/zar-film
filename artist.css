@@ -1,0 +1,244 @@
+@font-face {
+  font-family: yekan;
+  src: url("font/BYekan+.ttf") format("truetype");
+}
+
+body {
+  background-color: black;
+  font-family: iranikan, sans-serif;
+  color: white;
+  padding: 0%;
+  margin-top: 0%;
+}
+.boxs {
+  width: 97%;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.right {
+  background: #161a25;
+  width: 500px;
+  height: 100%;
+  text-align: right;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+}
+.input-box {
+  height: 56px;
+  color: rgb(191, 216, 216);
+  width: 330px;
+  text-align: right;
+  background: #161a25;
+  border-radius: 0px 10px 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  padding: 0 0 0 10px;
+  align-content: center;
+  align-items: center;
+  border: 0;
+  vertical-align: baseline;
+  margin: 0%;
+}
+.input-box input {
+  background-color: #161a25;
+  border: none;
+}
+.searchbtn {
+  height: 56px;
+  width: 110px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-align: right;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  border: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0px 0px 0px 0px;
+}
+.searchbtn button {
+  overflow: visible;
+  cursor: pointer;
+  background: #eb8307;
+  border-radius: 12px;
+  color: aliceblue;
+  cursor: pointer;
+  border: none;
+  text-transform: none;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: -27px;
+}
+.searchbtn button svg {
+  text-transform: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  vertical-align: middle;
+  overflow: hidden;
+  fill: #fff;
+  height: 20px;
+  margin-right: 5px;
+  width: 20px;
+}
+
+.left {
+  display: flex;
+  width: 512px;
+  background-color: #000000;
+  vertical-align: baseline;
+  gap: 15px;
+  margin: 0%;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.filter {
+  position: relative;
+  width: 500px;
+}
+
+label {
+  position: absolute;
+  top: -8px;
+  right: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 0px 5px;
+  font-size: 12px;
+  color: #fff;
+  pointer-events: none;
+}
+
+select {
+  background-color: black;
+  color: #fff;
+  border: 2px solid #787878;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  cursor: pointer;
+  height: 56px;
+  width: 100%;
+  direction: rtl;
+}
+
+select:hover {
+  border-color: #ff8800;
+}
+.artists {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 15px;
+  padding: 10px;
+  width: 97%;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+.artist {
+  background: #141923;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  position: relative;
+  flex-direction: column;
+}
+.pic {
+  overflow: hidden;
+  position: relative;
+  margin: 0%;
+  padding: 0%;
+}
+img {
+  width: 163px;
+  height: 270px;
+  vertical-align: middle;
+  object-fit: cover;
+  border-radius: 15px;
+  margin: 0%;
+  padding: 0%;
+}
+ul {
+  list-style: none;
+}
+.value {
+  color: #f2eded;
+  font-weight: 400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #161a25;
+  padding: 0%;
+  font-size: 14px;
+  margin-top: 10px;
+  top: 0%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bio {
+  background-color: #eb8307;
+  text-align: center;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 8px;
+  width: 75%;
+}
+.list {
+  bottom: 0%;
+  height: 45px;
+  color: #fff;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.number {
+  margin: 5px 5px 5px 5px;
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+}
+.number:hover {
+  background-color: #eb8307;
+}
+.number svg {
+  fill: #fff;
+  width: 10px;
+  height: 10px;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #787878;
+  height: 62px;
+  width: 90%;
+}

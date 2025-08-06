@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="artist.css" />
+
+    <title>هنرمندان - زر فیلم</title>
+  </head>
+  <body>
+    <svg>
+      <symbol viewBox="0 0 21 21" id="searchac">
+        <path
+          d="M9.9375 0.961426C14.9055 0.961426 18.9375 4.99343 18.9375 9.96143C18.9375 14.9294 14.9055 18.9614 9.9375 18.9614C4.9695 18.9614 0.9375 14.9294 0.9375 9.96143C0.9375 4.99343 4.9695 0.961426 9.9375 0.961426ZM9.9375 16.9614C13.8045 16.9614 16.9375 13.8284 16.9375 9.96143C16.9375 6.09343 13.8045 2.96143 9.9375 2.96143C6.0695 2.96143 2.9375 6.09343 2.9375 9.96143C2.9375 13.8284 6.0695 16.9614 9.9375 16.9614ZM17.7155 17.7394C18.106 17.3489 18.7391 17.3489 19.1296 17.7393L20.5439 19.1531C20.9347 19.5437 20.9347 20.1772 20.544 20.5679C20.1533 20.9586 19.5198 20.9586 19.1291 20.5678L17.7154 19.1536C17.325 18.763 17.325 18.1299 17.7155 17.7394Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 7 11" id="right_arrows_slider">
+        <path
+          d="M4.26856 5.72621L0.732722 2.19037C0.407335 1.86498 0.407335 1.33743 0.732723 1.01204C1.05811 0.686651 1.58567 0.686651 1.91106 1.01204L5.83718 4.93816C6.2724 5.37339 6.2724 6.07903 5.83718 6.51425L1.91105 10.4404C1.58567 10.7658 1.05811 10.7658 0.732721 10.4404C0.407334 10.115 0.407334 9.58743 0.732722 9.26204L4.26856 5.72621Z"
+        ></path>
+      </symbol>
+    </svg>
+    <div class="header"></div>
+
+    <div class="boxs">
+      <div class="left">
+        <div class="filter">
+          <label for="profession">حرفه</label>
+          <select>
+            <option value="all" disabled selected hidden>همه</option>
+            <option value="actor">بازیگر</option>
+            <option value="director">کارگردان</option>
+          </select>
+        </div>
+
+        <div class="filter">
+          <label for="gender">جنسیت</label>
+          <select>
+            <option value="all" disabled selected hidden>همه</option>
+            <option value="male">مرد</option>
+            <option value="female">زن</option>
+          </select>
+        </div>
+      </div>
+      <div class="right">
+        <div class="searchbtn">
+          <button>
+            <svg class="icon searchac_icon">
+              <use xlink:href="#searchac"></use>
+            </svg>
+            جست و جو
+          </button>
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter +...نام بازیگر،کارگردان و" />
+        </div>
+      </div>
+    </div>
+    <div class="artists">
+      <div class="artist">
+        <div class="pic"><img src="images/nic.jpg" alt="nicole kidman" /></div>
+        <span class="value">Nicole Kidman</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/jac.jpg" alt="Jackie Chan " />
+          </div>
+        </div>
+        <span class="value">Jackie Chan</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/akshey.jpg" alt="Akshay Kumar" />
+          </div>
+        </div>
+        <span class="value">Akshay Kumar</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/samuel.jpg" alt="Samuel L. Jackson" />
+          </div>
+        </div>
+        <span class="value">Samuel L. Jackson</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/willis.jpg" alt="Bruce Willis" />
+          </div>
+        </div>
+        <span class="value">Bruce Willis</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/robert.jpg" alt="Robert De Niro" />
+          </div>
+        </div>
+        <span class="value">Robert De Niro</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/nicolas.jpg" alt="Nicolas Cage" />
+        </div>
+        <span class="value">Nicolas Cage</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic"><img src="images/johnny.jpg" alt="Johnny Depp" /></div>
+        <span class="value">Johnny Depp</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/sylvester.jpg" alt="Sylvester Stallone" />
+        </div>
+        <span class="value">nSylvester Stallone</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/willem.jpg" alt="Willem Dafoe" />
+        </div>
+        <span class="value">Willem Dafoe</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/bachchan.jpg" alt="Amitabh Bachchan" />
+        </div>
+        <span class="value">Amitabh Bachchan</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/top hanks.jpg" alt="Tom Hanks" />
+        </div>
+        <span class="value">Tom Hanks</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/antonio.jpg" alt="Antonio Banderas" />
+        </div>
+        <span class="value">Antonio Banderas</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/morgan.jpg" alt="Morgan Freeman" />
+        </div>
+        <span class="value">Morgan Freeman</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic"><img src="images/mark.jpg" alt="Mark Wahlberg" /></div>
+        <span class="value">Mark Wahlberg</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic"><img src="images/ai.jpg" alt="Al Pacino" /></div>
+        <span class="value">Al Pacino</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic"><img src="images/ryan.jpg" alt="Ryan Reynolds" /></div>
+        <span class="value">Ryan Reynolds</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/juli.jpg" alt="Julianne Moore" />
+        </div>
+        <span class="value">Julianne Moore</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <img src="images/anthony.jpg" alt="Anthony Hopkins" />
+        </div>
+        <span class="value">Anthony Hopkins</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div><img src="images/ewan.jpg" alt="Ewan McGregor" /></div>
+        </div>
+        <span class="value">Ewan McGregor</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+      <div class="artist">
+        <div class="pic">
+          <div class="pic-in">
+            <img src="images/liam.jpg" alt="Liam Neeson" />
+          </div>
+        </div>
+        <span class="value">Liam Neeson</span>
+        <div class="bio">
+          <a>بیوگرافی و بیشتر</a>
+        </div>
+      </div>
+    </div>
+    <div class="list">
+      <span class="number">1</span> <span class="number">2</span>
+      <span class="number">3</span> <span class="number">4</span>
+      <span class="number">5</span> <span class="number">6</span>
+      <span class="number">...</span> <span class="number">2,701</span>
+      <span class="number">
+        <svg class="icon icon_next">
+          <use xlink:href="#right_arrows_slider"></use>
+        </svg>
+      </span>
+    </div>
+    <footer></footer>
+  </body>
+</html>
