@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smurfs</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<svg width="0" height="0" class="hidden">
+    <symbol viewBox="0 0 16 21" id="bookmarksingle">
+        <path
+                d="M1 0H15C15.2652 0 15.5196 0.105357 15.7071 0.292893C15.8946 0.48043 16 0.734784 16 1V20.143C16.0001 20.2324 15.9763 20.3202 15.9309 20.3973C15.8855 20.4743 15.8204 20.5378 15.7421 20.5811C15.6639 20.6244 15.5755 20.6459 15.4861 20.6434C15.3968 20.641 15.3097 20.6146 15.234 20.567L8 16.03L0.766 20.566C0.690368 20.6135 0.603387 20.6399 0.514102 20.6424C0.424817 20.6449 0.336486 20.6235 0.258295 20.5803C0.180104 20.5371 0.114907 20.4738 0.0694828 20.3969C0.0240588 20.32 6.64708e-05 20.2323 0 20.143V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM14 2H2V17.432L8 13.671L14 17.432V2Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 100 100" id="likebtn">
+        <path
+                d=" M 43.61 15.57 C 45.50 12.32 48.11 9.13 51.97 8.31 C 58.04 6.46 64.88 10.80 65.92 17.02 C 66.47 23.34 63.91 29.46 64.00 35.76 C 69.67 35.75 75.35 35.72 81.03 35.76 C 84.96 35.74 89.27 37.12 91.44 40.61 C 93.61 43.67 93.65 47.70 92.41 51.13 C 89.01 61.24 85.76 71.41 82.38 81.52 C 80.54 87.62 74.39 92.07 68.04 92.01 C 61.98 91.95 55.93 92.10 49.88 91.93 C 42.98 91.55 38.54 85.54 33.13 82.02 C 29.84 88.82 21.23 87.67 15.00 87.28 C 10.27 86.90 6.82 82.58 6.82 77.96 C 6.68 63.60 6.75 49.24 6.78 34.87 C 6.74 31.04 8.55 26.88 12.37 25.49 C 16.66 24.12 21.31 24.32 25.73 24.82 C 29.24 25.15 32.07 27.65 33.41 30.82 C 36.71 25.67 40.30 20.71 43.61 15.57 M 51.07 16.00 C 45.24 24.31 39.75 32.86 34.00 41.23 C 34.00 52.37 34.00 63.50 34.00 74.64 C 38.00 77.74 42.01 80.84 46.01 83.94 C 48.82 86.25 52.63 85.73 56.00 85.76 C 60.56 85.63 65.15 85.98 69.71 85.60 C 72.44 84.82 74.98 82.87 76.16 80.26 C 79.65 69.67 83.12 59.06 86.63 48.46 C 87.80 45.87 86.00 42.58 83.14 42.30 C 76.54 41.56 69.86 42.31 63.24 41.92 C 60.07 41.20 57.56 38.17 57.52 34.90 C 58.03 29.56 59.35 24.32 59.77 18.97 C 59.90 14.63 53.63 12.44 51.07 16.00 M 15.10 31.24 C 13.12 31.75 13.05 34.28 13.00 35.94 C 13.00 49.32 12.99 62.69 13.01 76.06 C 13.08 77.74 13.05 80.24 15.05 80.83 C 18.26 81.57 21.64 81.35 24.90 81.03 C 27.83 80.75 27.60 77.22 27.74 75.05 C 27.76 62.34 27.77 49.63 27.73 36.92 C 27.47 35.03 27.97 32.24 25.88 31.29 C 22.36 30.53 18.61 30.44 15.10 31.24 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 100 100" id="dislikebtn">
+        <path
+                d=" M 25.61 9.44 C 30.06 7.17 35.20 8.22 39.99 8.01 C 45.34 8.27 51.21 7.00 56.08 9.83 C 59.84 12.31 63.22 15.31 66.85 17.97 C 68.58 14.61 72.08 12.54 75.86 12.55 C 80.60 12.57 86.11 11.66 90.06 14.91 C 93.25 17.64 93.34 22.20 93.27 26.06 C 93.20 39.06 93.31 52.05 93.22 65.04 C 93.33 69.13 91.18 73.59 86.99 74.74 C 82.42 75.82 77.56 75.81 72.96 74.91 C 69.93 74.28 67.81 71.88 66.59 69.16 C 62.43 75.49 58.20 81.78 53.90 88.01 C 48.97 94.38 37.63 92.93 34.78 85.26 C 32.47 78.37 36.23 71.26 36.07 64.24 C 30.37 64.23 24.67 64.29 18.97 64.24 C 15.06 64.25 10.77 62.89 8.59 59.43 C 6.44 56.41 6.34 52.39 7.55 48.97 C 10.96 38.83 14.23 28.64 17.62 18.49 C 18.82 14.50 21.85 11.20 25.61 9.44 M 30.30 14.41 C 27.36 15.23 24.60 17.42 23.62 20.38 C 20.22 30.78 16.80 41.16 13.37 51.55 C 12.22 54.12 13.99 57.41 16.84 57.69 C 23.45 58.47 30.15 57.65 36.78 58.10 C 39.95 58.78 42.43 61.80 42.47 65.05 C 42.05 70.66 40.38 76.15 40.27 81.78 C 40.86 85.73 46.54 87.26 48.93 84.02 C 54.75 75.70 60.25 67.15 66.00 58.78 C 66.00 47.64 66.00 36.50 66.00 25.36 C 62.00 22.26 58.01 19.15 54.00 16.07 C 51.18 13.75 47.37 14.27 43.99 14.24 C 39.43 14.38 34.85 14.00 30.30 14.41 M 74.14 19.23 C 72.23 20.11 72.52 22.53 72.29 24.28 C 72.20 37.23 72.24 50.18 72.28 63.13 C 72.52 64.98 72.06 67.70 74.07 68.69 C 77.61 69.49 81.39 69.56 84.94 68.75 C 86.89 68.22 86.94 65.71 86.99 64.06 C 87.00 50.69 87.01 37.31 86.99 23.94 C 87.07 21.90 86.62 18.98 84.01 18.92 C 80.74 18.64 77.35 18.44 74.14 19.23 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 60 30" id="IMDB">
+        <path
+                d="M4.36943 0.0585327H55.3924C57.4048 0.0585327 59.0392 1.6876 59.0392 3.70531V25.57C59.0392 27.5824 57.4101 29.2168 55.3924 29.2168H4.36943C2.35705 29.2168 0.722656 27.5877 0.722656 25.57V3.69999C0.722656 1.6876 2.35705 0.0585327 4.36943 0.0585327Z"
+                fill="#F5C518"
+        ></path>
+        <path
+                d="M8.01074 22.8334H12.5679V6.43109H8.01074V22.8334Z"
+                fill="black"
+        ></path>
+        <path
+                d="M22.2891 6.43109L21.2669 14.0919L20.6334 9.92345C20.4471 8.58719 20.2714 7.42663 20.1064 6.43109H14.3887V22.8334H18.2537L18.2697 12.005L19.8934 22.8334H22.6458L24.1897 11.7655L24.2003 22.8334H28.0547V6.43109H22.2891Z"
+                fill="black"
+        ></path>
+        <path
+                d="M29.8809 22.8334V6.43109H36.9932C38.601 6.43109 39.9053 7.72475 39.9053 9.32719V19.9373C39.9053 21.5345 38.6063 22.8334 36.9932 22.8334H29.8809ZM35.1938 9.38575C35.0128 9.28993 34.6668 9.24201 34.1664 9.24201V20.0012C34.8318 20.0012 35.2364 19.8841 35.3908 19.6339C35.5452 19.389 35.6251 18.7235 35.6251 17.6322V11.2703C35.6251 10.5303 35.5984 10.0565 35.5452 9.84359C35.492 9.63597 35.3748 9.48158 35.1938 9.38575Z"
+                fill="black"
+        ></path>
+        <path
+                d="M48.493 10.541H48.7858C50.4202 10.541 51.7458 11.824 51.7458 13.3998V19.9746C51.7458 21.5558 50.4202 22.8334 48.7858 22.8334H48.493C47.4922 22.8334 46.6084 22.3543 46.0707 21.6196L45.8099 22.6205H41.7266V6.43109H46.0867V11.6962C46.6457 10.9988 47.5135 10.541 48.493 10.541ZM47.5614 18.5372V14.6509C47.5614 14.0067 47.5188 13.5862 47.4336 13.3945C47.3484 13.2029 47.0024 13.0751 46.7628 13.0751C46.5233 13.0751 46.1506 13.1762 46.0814 13.3466V14.6509V18.6597V19.9214C46.1612 20.1077 46.5179 20.2142 46.7628 20.2142C47.0077 20.2142 47.3697 20.113 47.4443 19.9214C47.5241 19.735 47.5614 19.2719 47.5614 18.5372Z"
+                fill="black"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 92 92" id="starts">
+        <path
+                d=" M 42.26 2.21 C 46.99 -0.08 52.54 2.73 54.93 7.06 C 57.95 12.51 60.46 18.23 63.39 23.72 C 64.13 25.12 65.52 26.15 67.06 26.47 C 72.30 27.54 77.65 28.07 82.87 29.26 C 86.86 30.30 90.65 33.58 90.99 37.90 C 91.21 41.12 89.71 44.21 87.63 46.59 C 83.88 50.83 79.54 54.51 75.77 58.73 C 73.51 61.88 75.76 65.69 76.25 69.06 C 77.45 74.79 79.94 81.27 76.84 86.81 C 74.41 91.19 68.40 91.27 64.31 89.47 C 58.84 86.93 53.92 83.35 48.61 80.52 C 47.24 79.80 45.58 79.40 44.15 80.20 C 38.49 82.97 33.41 86.85 27.67 89.48 C 23.31 91.51 16.97 90.92 14.75 86.09 C 12.23 80.20 14.81 73.85 16.03 67.96 C 16.53 64.97 18.32 61.54 16.26 58.76 C 12.33 54.33 7.71 50.54 3.90 46.00 C 1.73 43.26 0.29 39.52 1.43 36.05 C 2.46 32.60 5.72 30.30 9.04 29.30 C 14.49 27.98 20.12 27.58 25.57 26.30 C 29.11 24.85 29.72 20.55 31.56 17.61 C 34.65 12.25 36.34 5.24 42.26 2.21 M 43.27 9.34 C 39.05 15.37 36.89 22.61 32.80 28.73 C 28.66 33.75 21.55 33.08 15.77 34.39 C 12.85 35.08 8.92 34.93 7.35 38.00 C 7.29 41.56 10.66 43.82 12.83 46.23 C 15.97 49.64 19.84 52.48 22.33 56.43 C 26.57 65.64 17.50 75.14 20.90 84.36 C 25.84 84.47 29.68 80.98 33.81 78.78 C 38.61 75.93 43.99 71.81 49.88 74.17 C 55.67 76.76 60.74 80.72 66.45 83.48 C 67.91 84.30 69.62 84.15 71.23 84.31 C 74.38 74.95 65.24 65.36 69.90 56.15 C 73.79 50.43 79.90 46.56 83.92 40.92 C 85.57 39.09 84.49 36.39 82.23 35.75 C 76.48 33.93 70.35 33.84 64.53 32.31 C 62.05 31.49 59.74 29.88 58.38 27.61 C 54.95 21.66 52.64 15.07 48.77 9.39 C 47.54 7.22 44.53 7.19 43.27 9.34 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 83 83" id="location">
+        <path
+                d=" M 33.36 4.70 C 40.91 2.89 49.03 3.70 56.10 6.90 C 64.40 10.65 70.88 18.25 73.16 27.08 C 75.26 34.59 74.78 42.70 72.12 50.01 C 68.68 59.66 62.14 67.89 54.58 74.67 C 46.87 81.07 34.62 80.60 27.31 73.80 C 19.91 66.73 13.43 58.28 10.34 48.40 C 7.46 39.28 7.96 28.96 12.46 20.44 C 16.69 12.47 24.57 6.63 33.36 4.70 M 35.45 10.70 C 29.43 11.93 23.81 15.28 20.08 20.20 C 14.87 27.20 13.56 36.71 15.93 45.03 C 18.44 54.03 24.16 61.76 30.67 68.30 C 34.29 71.94 39.78 73.87 44.84 72.55 C 49.16 71.59 52.46 68.37 55.26 65.14 C 62.05 57.72 67.56 48.47 68.22 38.22 C 68.42 31.16 66.38 23.77 61.50 18.51 C 55.07 11.46 44.67 8.63 35.45 10.70 Z"
+        ></path>
+        <path
+                d=" M 36.51 22.62 C 43.88 19.60 53.17 24.17 54.95 32.02 C 57.50 40.19 50.77 49.59 42.15 49.53 C 35.63 50.08 29.27 45.25 27.96 38.87 C 26.21 32.33 30.10 24.87 36.51 22.62 M 38.42 28.66 C 33.16 30.75 32.23 38.80 37.10 41.87 C 41.43 45.31 48.52 42.13 49.09 36.73 C 50.11 31.13 43.60 26.01 38.42 28.66 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="playsingle">
+        <path
+                d="M17.49 9.60001L5.6 16.77C4.9 17.19 4 16.69 4 15.87V7.87001C4 4.38001 7.77 2.20001 10.8 3.94001L15.39 6.58001L17.48 7.78001C18.17 8.19001 18.18 9.19001 17.49 9.60001Z"
+        ></path>
+        <path
+                d="M18.0908 15.46L14.0408 17.8L10.0008 20.13C8.55079 20.96 6.91079 20.79 5.72079 19.95C5.14079 19.55 5.21079 18.66 5.82079 18.3L18.5308 10.68C19.1308 10.32 19.9208 10.66 20.0308 11.35C20.2808 12.9 19.6408 14.57 18.0908 15.46Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="video_square">
+        <path
+                opacity="0.4"
+                d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z"
+        ></path>
+        <path
+                d="M9.09961 12V10.52C9.09961 8.60999 10.4496 7.83999 12.0996 8.78999L13.3796 9.52999L14.6596 10.27C16.3096 11.22 16.3096 12.78 14.6596 13.73L13.3796 14.47L12.0996 15.21C10.4496 16.16 9.09961 15.38 9.09961 13.48V12Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 100 100" id="document_cloud">
+        <path
+                d=" M 33.25 5.32 C 42.04 5.17 50.83 5.27 59.62 5.27 C 71.35 16.94 83.02 28.65 94.71 40.35 C 94.69 45.16 94.92 49.98 94.66 54.79 C 94.49 58.07 89.19 58.10 88.60 54.97 C 88.33 51.57 88.56 48.15 88.50 44.75 C 80.63 44.36 72.49 45.80 64.83 43.42 C 59.41 41.77 56.08 36.38 55.56 30.94 C 54.88 24.49 55.42 17.98 55.25 11.50 C 44.21 12.07 32.58 9.80 22.06 14.09 C 14.68 17.21 11.95 25.64 11.61 33.03 C 11.34 43.34 11.58 53.67 11.49 63.99 C 11.65 70.96 12.72 78.93 18.46 83.65 C 24.04 88.24 31.64 88.25 38.48 88.70 C 41.63 89.23 41.19 94.76 37.95 94.69 C 27.90 95.12 16.07 92.90 10.18 83.86 C 3.69 73.77 5.52 61.29 5.25 49.94 C 5.51 38.83 3.77 26.72 9.80 16.73 C 14.56 8.65 24.41 5.70 33.25 5.32 M 61.50 15.88 C 62.02 22.46 59.90 30.12 64.19 35.79 C 69.86 40.11 77.53 37.98 84.12 38.50 C 76.59 30.95 69.05 23.41 61.50 15.88 Z"
+        ></path>
+        <path
+                d=" M 56.80 60.83 C 62.47 53.89 74.28 52.75 80.64 59.34 C 82.80 61.39 83.96 64.17 85.05 66.88 C 91.89 69.21 96.16 76.87 94.46 83.91 C 93.21 90.03 87.30 94.70 81.09 94.74 C 73.09 94.75 65.09 94.78 57.09 94.73 C 51.83 94.73 47.20 90.16 46.86 84.97 C 46.28 80.25 49.13 75.67 53.38 73.71 C 52.87 69.20 53.67 64.30 56.80 60.83 M 66.53 61.73 C 63.17 62.70 60.35 65.49 59.69 68.98 C 58.78 71.98 61.25 74.94 60.14 77.88 C 58.84 79.71 56.01 78.91 54.49 80.47 C 52.00 82.86 53.20 88.26 56.98 88.41 C 64.66 88.64 72.35 88.43 80.04 88.51 C 82.97 88.65 85.99 87.23 87.46 84.63 C 89.36 81.58 88.64 77.35 86.09 74.90 C 84.57 73.10 82.05 73.02 80.09 71.98 C 78.83 70.28 78.81 67.96 77.82 66.10 C 75.94 61.98 70.66 60.28 66.53 61.73 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 512 512" id="more_square">
+        <path
+                d=" M 175.68 40.80 C 189.08 39.68 202.53 40.05 215.96 40.00 C 243.63 40.00 271.30 40.00 298.97 40.00 C 318.48 40.10 338.06 39.38 357.47 41.76 C 383.80 44.70 410.56 51.86 432.03 68.02 C 450.01 81.40 462.69 101.03 469.61 122.19 C 478.25 147.80 480.27 175.13 480.00 201.99 C 480.00 230.99 480.00 259.98 480.00 288.98 C 479.84 313.03 480.92 337.21 477.40 361.09 C 474.48 381.62 468.88 402.14 458.04 419.99 C 449.00 435.12 435.94 447.79 420.58 456.45 C 400.03 468.18 376.45 473.41 353.08 475.64 C 335.11 477.48 317.02 476.92 298.99 477.00 C 267.65 477.00 236.31 477.00 204.97 477.00 C 180.03 477.20 154.78 475.44 130.74 468.36 C 107.29 461.61 85.15 448.34 70.62 428.42 C 53.26 405.01 46.48 375.63 44.07 347.05 C 42.61 331.42 43.07 315.71 43.00 300.03 C 43.00 267.01 43.00 233.99 43.00 200.97 C 42.81 170.89 45.44 140.04 57.24 112.06 C 62.89 98.74 70.94 86.35 81.35 76.26 C 92.54 65.39 106.25 57.33 120.82 51.90 C 138.38 45.34 157.04 42.23 175.68 40.80 M 172.59 71.84 C 159.71 73.03 146.85 75.23 134.59 79.43 C 116.84 85.31 100.66 96.84 91.04 113.09 C 77.57 135.54 74.72 162.37 73.78 188.01 C 73.69 234.02 73.79 280.04 73.74 326.05 C 74.34 350.29 76.71 375.29 87.46 397.39 C 95.14 413.29 108.50 426.21 124.59 433.47 C 147.50 443.92 173.15 446.01 198.03 446.25 C 231.68 446.25 265.32 446.25 298.97 446.25 C 318.34 446.15 337.79 446.87 357.05 444.39 C 376.43 441.98 396.21 437.04 412.21 425.37 C 426.02 415.52 435.55 400.62 440.80 384.65 C 448.07 362.59 449.44 339.09 449.25 316.02 C 449.25 281.67 449.25 247.32 449.25 212.97 C 449.50 186.14 449.43 158.68 441.01 132.89 C 435.27 114.87 423.88 98.28 407.51 88.38 C 385.31 74.82 358.66 71.79 333.17 70.77 C 286.11 70.71 239.05 70.78 191.99 70.74 C 185.51 70.94 179.04 71.24 172.59 71.84 Z"
+        ></path>
+        <path
+                d=" M 174.51 238.81 C 181.57 236.67 189.69 238.81 194.79 244.13 C 199.74 248.99 201.81 256.54 200.11 263.25 C 198.50 270.69 192.25 276.87 184.80 278.42 C 179.05 279.77 172.74 278.46 167.99 274.95 C 162.45 270.90 159.28 263.92 159.79 257.09 C 160.25 248.70 166.44 241.07 174.51 238.81 Z"
+        ></path>
+        <path
+                d=" M 256.39 238.65 C 266.16 235.88 277.22 241.68 280.64 251.20 C 283.82 259.23 281.20 269.08 274.41 274.44 C 269.30 278.57 262.10 280.01 255.80 278.12 C 247.77 276.02 241.70 268.46 241.10 260.23 C 240.08 250.56 246.96 240.92 256.39 238.65 Z"
+        ></path>
+        <path
+                d=" M 337.39 238.72 C 348.17 235.42 360.48 242.91 362.71 253.89 C 365.18 263.56 359.37 274.50 349.88 277.68 C 342.74 280.35 334.12 278.70 328.65 273.32 C 323.41 268.49 321.14 260.69 322.88 253.78 C 324.42 246.59 330.31 240.62 337.39 238.72 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 100 100" id="stickynote">
+        <path
+                d=" M 31.55 11.57 C 43.38 11.41 55.22 11.55 67.06 11.50 C 73.18 11.73 79.81 13.13 84.17 17.75 C 88.28 21.88 89.74 27.82 90.33 33.43 C 91.04 43.62 90.63 53.84 90.77 64.05 C 90.76 65.83 90.95 67.97 89.39 69.22 C 81.17 77.45 72.95 85.68 64.71 93.90 C 63.83 95.00 62.28 94.65 61.06 94.76 C 52.07 94.71 43.08 94.79 34.09 94.73 C 27.57 94.42 20.54 93.10 15.72 88.34 C 11.01 83.53 9.67 76.50 9.50 70.01 C 9.51 58.61 9.48 47.21 9.51 35.81 C 9.85 29.21 11.30 22.02 16.29 17.29 C 20.35 13.41 26.09 11.97 31.55 11.57 M 21.44 21.21 C 17.09 24.73 16.15 30.72 15.77 35.98 C 15.73 47.37 15.74 58.76 15.76 70.15 C 16.00 74.94 16.73 80.21 20.18 83.84 C 24.07 87.51 29.68 88.23 34.80 88.49 C 43.03 88.52 51.27 88.49 59.50 88.50 C 59.84 81.43 57.85 73.01 63.47 67.42 C 69.12 62.08 77.46 63.78 84.50 63.50 C 84.41 53.68 84.78 43.84 84.08 34.03 C 83.57 29.64 82.56 24.85 79.16 21.73 C 75.91 18.65 71.18 18.04 66.90 17.76 C 55.92 17.72 44.94 17.76 33.96 17.74 C 29.63 17.87 24.98 18.47 21.44 21.21 M 67.44 72.46 C 64.94 75.71 65.93 80.08 65.75 83.86 C 70.46 79.16 75.17 74.46 79.86 69.75 C 75.70 69.85 70.56 69.03 67.44 72.46 Z"
+        ></path>
+        <path
+                d=" M 27.39 43.21 C 28.74 42.35 30.44 42.89 31.95 42.73 C 42.29 42.80 52.63 42.69 62.96 42.78 C 66.46 42.71 66.50 48.81 63.00 48.93 C 51.63 49.06 40.26 49.02 28.89 48.95 C 26.04 48.94 24.85 44.70 27.39 43.21 Z"
+        ></path>
+        <path
+                d=" M 28.24 59.56 C 35.72 59.45 43.21 59.47 50.70 59.54 C 54.07 59.85 53.83 65.44 50.45 65.59 C 43.39 65.93 36.29 65.72 29.22 65.69 C 25.67 66.02 24.74 60.18 28.24 59.56 Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 0 20 21" id="message">
+        <path
+                d="M9.99935 19.5082C9.42435 19.5082 8.88268 19.2165 8.49935 18.7082L7.24935 17.0415C7.22435 17.0082 7.12435 16.9665 7.08268 16.9582H6.66602C3.19102 16.9582 1.04102 16.0165 1.04102 11.3332V7.1665C1.04102 3.48317 2.98268 1.5415 6.66602 1.5415H13.3327C17.016 1.5415 18.9577 3.48317 18.9577 7.1665V11.3332C18.9577 15.0165 17.016 16.9582 13.3327 16.9582H12.916C12.8493 16.9582 12.791 16.9915 12.7493 17.0415L11.4993 18.7082C11.116 19.2165 10.5743 19.5082 9.99935 19.5082ZM6.66602 2.7915C3.68268 2.7915 2.29102 4.18317 2.29102 7.1665V11.3332C2.29102 15.0998 3.58268 15.7082 6.66602 15.7082H7.08268C7.50768 15.7082 7.99101 15.9498 8.24935 16.2915L9.49935 17.9582C9.79101 18.3415 10.2077 18.3415 10.4993 17.9582L11.7493 16.2915C12.0243 15.9248 12.4577 15.7082 12.916 15.7082H13.3327C16.316 15.7082 17.7077 14.3165 17.7077 11.3332V7.1665C17.7077 4.18317 16.316 2.7915 13.3327 2.7915H6.66602Z"
+        ></path>
+        <path
+                d="M9.99935 10.5002C9.53268 10.5002 9.16602 10.1252 9.16602 9.66683C9.16602 9.2085 9.54102 8.8335 9.99935 8.8335C10.4577 8.8335 10.8327 9.2085 10.8327 9.66683C10.8327 10.1252 10.466 10.5002 9.99935 10.5002Z"
+        ></path>
+        <path
+                d="M13.3333 10.4999C12.8667 10.4999 12.5 10.1249 12.5 9.66659C12.5 9.20825 12.875 8.83325 13.3333 8.83325C13.7917 8.83325 14.1667 9.20825 14.1667 9.66659C14.1667 10.1249 13.8 10.4999 13.3333 10.4999Z"
+        ></path>
+        <path
+                d="M6.66732 10.5002C6.20065 10.5002 5.83398 10.1252 5.83398 9.66683C5.83398 9.2085 6.20898 8.8335 6.66732 8.8335C7.12565 8.8335 7.50065 9.2085 7.50065 9.66683C7.50065 10.1252 7.13398 10.5002 6.66732 10.5002Z"
+        ></path>
+    </symbol>
+    <symbol viewBox="0 96 960 960" id="faq">
+        <path
+                d="M549.999 686.769q14.692 0 25.654-10.962 10.961-10.961 10.961-25.653 0-14.693-10.961-25.654-10.962-10.961-25.654-10.961T524.346 624.5q-10.962 10.961-10.962 25.654 0 14.692 10.962 25.653 10.961 10.962 25.653 10.962Zm0-120.308q9.077 0 16.462-6.461 7.384-6.461 8.999-16.384 2-13.923 8.885-24.308t25.808-28.539q27.692-26.538 37.692-44.846 10-18.307 10-42.538 0-42.692-30.154-70.423t-77.692-27.731q-30.692 0-56.153 14.231-25.462 14.231-40.692 40.692-4.847 8.077-1 16.962Q456 386 465.307 389.846q8.692 3.846 17.461.808 8.769-3.039 14.231-11.115 9.769-14.539 22.923-21.808 13.154-7.27 30.077-7.27 26.308 0 43.231 15.231 16.924 15.231 16.924 40.154 0 15.154-8.577 28.424-8.577 13.269-29.731 32.654-25.923 22.307-34.308 36.769-8.384 14.461-10.384 38.923-1 9.307 5.769 16.576t17.076 7.269ZM322.308 795.999q-30.308 0-51.307-21-21-21-21-51.308V268.309q0-30.308 21-51.308 20.999-21 51.307-21h455.383q30.307 0 51.307 21 21 21 21 51.308v455.382q0 30.308-21 51.308t-51.307 21H322.308Zm0-59.999h455.383q4.615 0 8.462-3.846 3.846-3.847 3.846-8.463V268.309q0-4.616-3.846-8.463-3.847-3.846-8.462-3.846H322.308q-4.616 0-8.462 3.846-3.847 3.847-3.847 8.463v455.382q0 4.616 3.847 8.463 3.846 3.846 8.462 3.846ZM182.309 935.997q-30.307 0-51.307-21-21-21-21-51.307V378.308q0-12.769 8.615-21.384 8.616-8.615 21.384-8.615 12.769 0 21.385 8.615 8.615 8.615 8.615 21.384V863.69q0 4.616 3.846 8.462 3.847 3.847 8.462 3.847h485.382q12.769 0 21.385 8.615 8.615 8.615 8.615 21.384t-8.615 21.384q-8.616 8.615-21.385 8.615H182.309ZM309.999 256v480-480Z"
+        ></path>
+    </symbol>
+</svg>
+<div class="container">
+    <div class="top-right">
+        <img
+                class="Cover-serial"
+                src="../images/cb5NyNrqiCNNoDkA8FfxHAtypdG.jpeg"
+                alt="Cover serial"
+                ;
+        />
+        <div class="Cover-text">زیرنویس</div>
+        <div class="title-serial">
+            <h1 style="font-weight: normal">دانلود انیمه smurfs
+            <h4 style="font-weight: normal; color: #c9c9c9">اسمورف ها
+            </h4>
+        </div>
+        <div class="genres">
+            <span class="label1">ژانرها:</span>
+            <ul>
+                <li class="genre1">انیمیشن</li>
+                <li class="genre2">اکشن</li>
+                <li class="genre3">ماجراجویی</li>
+            </ul>
+        </div>
+        <div class="Summary-of-the-story">
+            هنگامی که پاپا اسمورف توسط جادوگران شیطانی، رازامل و گارگامل گرفته می شود، اسمورفت اسمورف ها را در یک ماموریت به دنیای واقعی هدایت می کند تا او را نجات دهند. با کمک دوستان جدید، اسمورف ها باید کشف کنند که چه چیزی سرنوشت آنها را برای نجات جهان تعیین می کند.
+
+        </div>
+        <div class="starts">
+            <svg class="starts_icon"><use xlink:href="#starts"></use></svg>
+            <span class="label2">ستارگان:</span>
+            <ul>
+                <li class="start1">Sayori Hanami</li>
+                <li class="start2">Natsuki Hanae</li>
+                <li class="start3">Akira Kito</li>
+            </ul>
+        </div>
+        <div class="country">
+            <svg class="location_icon">
+                <use xlink:href="#location"></use>
+            </svg>
+            <span class="label3">کشور:</span>
+            <ul>
+                <li class="country1">آمریکا</li>
+                <li class="country2">ژاپن</li>
+            </ul>
+        </div>
+        <div class="label-value">
+            <div class="label-up">توجه:</div>
+            <div class="value">کیفیت پرده است</div>
+        </div>
+    </div>
+    <div class="top-left">
+        <svg class="bookmarksingle_icon">
+            <use xlink:href="#bookmarksingle"></use>
+        </svg>
+        <svg class="likebtn_icon"><use xlink:href="#likebtn"></use></svg>
+        <svg class="dislikebtn_icon">
+            <use xlink:href="#dislikebtn"></use>
+        </svg>
+        <img
+                src="data:image/png;base64,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"
+                alt="زرفیلم"
+                title="زرفیلم"
+                data-lazy-src="data:image/png;base64,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"
+                data-ll-status="loaded"
+                class="lego-zarfilm"
+        />
+        <small>10/</small>
+        <strong>7.7</strong>
+        <div>
+            <svg class="IMDB_icon"><use xlink:href="#IMDB"></use></svg>
+        </div>
+        <div class="bottom">
+            <div class="votes">
+                <span id="post_percent_like">98</span>% (<span id="post_like_total"
+            >129</span
+            >
+                رای)
+            </div>
+            <div class="votes">225,393 رای</div>
+        </div>
+        <div class="btn-single-left">
+            <a
+                    href="#"
+                    class="Watch-the-whole-thing"
+                    target="_blank"
+                    rel="nofollow"
+                    data-wpel-link="internal"
+            >
+                <svg class="playsingle_icon">
+                    <use xlink:href="#playsingle"></use>
+                </svg>
+                <div class="text1">تماشای آنلاین</div>
+            </a>
+            <a
+                    href="#"
+                    class="trailer_btn"
+                    target="_blank"
+                    rel="nofollow"
+                    data-wpel-link="internal"
+            >
+                <svg class="video_square_icon">
+                    <use xlink:href="#video_square"></use>
+                </svg>
+                <div class="text1">مشاهده تریلر</div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="download-nav">
+    <ul>
+        <svg class="icon-active"><use xlink:href="#document_cloud"></use></svg>
+        <li class="active"><i class="icon-download"></i> باکس دانلود</li>
+        <svg class="icon"><use xlink:href="#more_square"></use></svg>
+        <li><i class="icon-info"></i> اطلاعات بیشتر</li>
+        <svg class="icon"><use xlink:href="#stickynote"></use></svg>
+        <li><i class="icon-list"></i> لیست‌های مرتبط</li>
+        <svg class="icon"><use xlink:href="#message"></use></svg>
+        <span class="num">17</span>
+        <li><i class="icon-comment"></i> نظرات</li>
+        <svg class="icon"><use xlink:href="#faq"></use></svg>
+        <li><i class="icon-question"></i> سوالات متداول</li>
+    </ul>
+</div>
+<div class="single-box">
+    <div class="box_serial">
+        <h3>باکس دانلود سریال</h3>
+        <div class="sortby_dls">
+            <div class="label_sort">
+                <svg class="icon_sort" viewBox="0 0 19 12" fill="none">
+                    <path
+                            d="M7.6333 12H11.6333V10H7.6333V12ZM0.633301 0V2H18.6333V0H0.633301ZM3.6333 7H15.6333V5H3.6333V7Z"
+                            fill="white"
+                    ></path>
+                </svg>
+                نمایش
+            </div>
+            <div class="switch_sort">
+                <div class="item_sort_dl-active" data-sort="all">همه</div>
+                <div class="item_sort_dl" data-sort="free">رایگان</div>
+                <div class="item_sort_dl" data-sort="vip">نیاز به اشتراک</div>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row">
+        <div class="right_side">
+            <div class="season_name"><span>1080</span></div>
+            <span class="label_status">3.97</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row1">
+        <div class="right_side">
+            <div class="season_name"><span>720</span></div>
+            <span class="label_status">2   GB</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row2">
+        <div class="right_side">
+            <div class="season_name"><span>480</span></div>
+            <span class="label_status">908MB</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row3">
+        <div class="right_side">
+            <div class="season_name"><span>فصل 4</span></div>
+            <span class="label_status">تکمیل شده</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row4">
+        <div class="right_side">
+            <div class="season_name"><span>1080</span></div>
+            <span class="label_status">307</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row5">
+        <div class="right_side">
+            <div class="season_name"><span>720</span></div>
+            <span class="label_status">2</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+    <div class="title_series_row6">
+        <div class="right_side">
+            <div class="season_name"><span>480 </span></div>
+            <span class="label_status"> 908</span>
+        </div>
+        <div class="left_side">
+            <div class="arrow_holder">
+                <svg class="icon icon_arrow" viewBox="0 0 11 7" fill="none"><path d="M5.30333 4.125L8.83917 0.589168C9.16456 0.263781 9.69211 0.263781 10.0175 0.589168C10.3429 0.914556 10.3429 1.44211 10.0175 1.7675L6.09138 5.69362C5.65615 6.12885 4.95051 6.12885 4.51529 5.69362L0.589166 1.7675C0.263779 1.44211 0.263779 0.914554 0.589167 0.589167C0.914555 0.263779 1.44211 0.263779 1.7675 0.589167L5.30333 4.125Z"></path></svg>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
