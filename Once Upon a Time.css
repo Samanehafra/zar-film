@@ -419,6 +419,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-content: center;
   align-items: center;
@@ -572,4 +573,105 @@ h3 {
   cursor: pointer;
   background-color: #090c10;
   border-radius: 30px;
+}
+.footer {
+  font-family: yekan;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #141821;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  z-index: 100;
+  height: 70px;
+}
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer-right a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: color 0.2s;
+  position: relative;
+}
+.footer .footer-right a:hover {
+  color: orange;
+}
+.footer-right a:last-child {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 40px;
+}
+.footer-social {
+  display: inline-flex;
+  width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  fill: white;
+  font-size: 20px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
+  margin-left: 10px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.footer-social:hover {
+  fill: #f7931e;
+}
+.footer-download {
+  background: #1f7a26;
+  color: white;
+  border: 0;
+  font: inherit;
+  border-radius: 35px;
+  width: 150px;
+  height: 35px;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.icon-android {
+  width: 26px;
+  height: 26px;
+  fill: white;
+  cursor: pointer;
+  margin-right: 110px;
+  margin-top: -22px;
+  display: flex;
+}
+.backtotop_icon {
+  width: 22px;
+  height: 22px;
+  fill: #e08011;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    height: auto;
+    padding: 8px 4px;
+  }
+  .footer-right {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .footer-socials {
+    margin-top: 8px;
+  }
 }
