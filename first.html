@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="fa" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه فیلم</title>
+    <link rel="stylesheet" href="first.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <svg width="0" height="0" class="hidden">
+      <symbol viewBox="0 0 17 17" id="star_fill">
+        <path
+          d="M9.78877 2.71528L10.9621 5.06195C11.1221 5.38862 11.5488 5.70195 11.9088 5.76195L14.0354 6.11528C15.3954 6.34195 15.7154 7.32862 14.7354 8.30195L13.0821 9.95528C12.8021 10.2353 12.6488 10.7753 12.7354 11.162L13.2088 13.2086C13.5821 14.8286 12.7221 15.4553 11.2888 14.6086L9.29544 13.4286C8.93544 13.2153 8.3421 13.2153 7.97544 13.4286L5.9821 14.6086C4.55544 15.4553 3.68877 14.8219 4.0621 13.2086L4.53544 11.162C4.6221 10.7753 4.46877 10.2353 4.18877 9.95528L2.53544 8.30195C1.5621 7.32862 1.87544 6.34195 3.23544 6.11528L5.3621 5.76195C5.71544 5.70195 6.1421 5.38862 6.3021 5.06195L7.47544 2.71528C8.11544 1.44195 9.15544 1.44195 9.78877 2.71528Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="mic">
+        <path
+          d="M8.00003 0.666626C9.84096 0.666626 11.3334 2.15901 11.3334 3.99996V6.66663C11.3334 8.50756 9.84096 9.99996 8.00003 9.99996C6.15905 9.99996 4.66667 8.50756 4.66667 6.66663V3.99996C4.66667 2.15901 6.15905 0.666626 8.00003 0.666626ZM2.03662 7.33329H3.38059C3.70408 9.59483 5.64902 11.3333 8.00003 11.3333C10.351 11.3333 12.2959 9.59483 12.6194 7.33329H13.9634C13.656 10.1144 11.4478 12.3226 8.66669 12.63V15.3333H7.33336V12.63C4.55225 12.3226 2.34405 10.1144 2.03662 7.33329Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="cc">
+        <path
+          d="M14.0002 2C14.3684 2 14.6668 2.29848 14.6668 2.66667V13.3333C14.6668 13.7015 14.3684 14 14.0002 14H2.00016C1.63198 14 1.3335 13.7015 1.3335 13.3333V2.66667C1.3335 2.29848 1.63198 2 2.00016 2H14.0002ZM6.00016 5.33333C4.52816 5.33333 3.3335 6.528 3.3335 8C3.3335 9.472 4.52816 10.6667 6.00016 10.6667C6.7335 10.6667 7.40016 10.3667 7.8855 9.88533L6.9431 8.94293C6.70183 9.18413 6.3685 9.33333 6.00016 9.33333C5.2635 9.33333 4.66683 8.73667 4.66683 8C4.66683 7.26333 5.2635 6.66667 6.00016 6.66667C6.36683 6.66667 6.69903 6.81333 6.9437 7.05773L7.88616 6.11533C7.40343 5.63227 6.7365 5.33333 6.00016 5.33333ZM10.6668 5.33333C9.19483 5.33333 8.00016 6.528 8.00016 8C8.00016 9.472 9.19483 10.6667 10.6668 10.6667C11.4028 10.6667 12.0695 10.368 12.5522 9.88533L11.6098 8.94293C11.3685 9.18413 11.0352 9.33333 10.6668 9.33333C9.93016 9.33333 9.3335 8.73667 9.3335 8C9.3335 7.26333 9.93016 6.66667 10.6668 6.66667C11.0355 6.66667 11.3691 6.81607 11.6104 7.05773L12.5528 6.11533C12.0701 5.63227 11.4032 5.33333 10.6668 5.33333Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 34 35" id="playcos">
+        <path d="M28.5293 9.9171C34.5293 13.3812 34.5293 22.0415 28.5293 25.5056L14.4764 33.619C8.47637 37.0831 0.976362 32.753 0.976363 25.8248L0.976363 9.59788C0.976364 2.66967 8.47636 -1.66046 14.4764 1.80364L28.5293 9.9171Z" fill="white"></path>
+    </symbol>
+    <symbol viewBox="0 0 60 30" id="IMDB">
+        <path d="M4.36943 0.0585327H55.3924C57.4048 0.0585327 59.0392 1.6876 59.0392 3.70531V25.57C59.0392 27.5824 57.4101 29.2168 55.3924 29.2168H4.36943C2.35705 29.2168 0.722656 27.5877 0.722656 25.57V3.69999C0.722656 1.6876 2.35705 0.0585327 4.36943 0.0585327Z" fill="#F5C518"></path>
+        <path d="M8.01074 22.8334H12.5679V6.43109H8.01074V22.8334Z" fill="black"></path>
+        <path d="M22.2891 6.43109L21.2669 14.0919L20.6334 9.92345C20.4471 8.58719 20.2714 7.42663 20.1064 6.43109H14.3887V22.8334H18.2537L18.2697 12.005L19.8934 22.8334H22.6458L24.1897 11.7655L24.2003 22.8334H28.0547V6.43109H22.2891Z" fill="black"></path>
+        <path d="M29.8809 22.8334V6.43109H36.9932C38.601 6.43109 39.9053 7.72475 39.9053 9.32719V19.9373C39.9053 21.5345 38.6063 22.8334 36.9932 22.8334H29.8809ZM35.1938 9.38575C35.0128 9.28993 34.6668 9.24201 34.1664 9.24201V20.0012C34.8318 20.0012 35.2364 19.8841 35.3908 19.6339C35.5452 19.389 35.6251 18.7235 35.6251 17.6322V11.2703C35.6251 10.5303 35.5984 10.0565 35.5452 9.84359C35.492 9.63597 35.3748 9.48158 35.1938 9.38575Z" fill="black"></path>
+        <path d="M48.493 10.541H48.7858C50.4202 10.541 51.7458 11.824 51.7458 13.3998V19.9746C51.7458 21.5558 50.4202 22.8334 48.7858 22.8334H48.493C47.4922 22.8334 46.6084 22.3543 46.0707 21.6196L45.8099 22.6205H41.7266V6.43109H46.0867V11.6962C46.6457 10.9988 47.5135 10.541 48.493 10.541ZM47.5614 18.5372V14.6509C47.5614 14.0067 47.5188 13.5862 47.4336 13.3945C47.3484 13.2029 47.0024 13.0751 46.7628 13.0751C46.5233 13.0751 46.1506 13.1762 46.0814 13.3466V14.6509V18.6597V19.9214C46.1612 20.1077 46.5179 20.2142 46.7628 20.2142C47.0077 20.2142 47.3697 20.113 47.4443 19.9214C47.5241 19.735 47.5614 19.2719 47.5614 18.5372Z" fill="black"></path>
+    </symbol>
+     <symbol viewBox="0 0 7 11" id="left_arrows_slider">
+        <path
+          d="M2.52051 5.72643L6.05634 9.26226C6.38173 9.58765 6.38173 10.1152 6.05634 10.4406V10.4406C5.73095 10.766 5.2034 10.766 4.87801 10.4406L0.951886 6.51447C0.51666 6.07925 0.51666 5.37361 0.951886 4.93838L4.87801 1.01226C5.2034 0.686874 5.73095 0.686875 6.05634 1.01226V1.01226C6.38173 1.33765 6.38173 1.86521 6.05634 2.1906L2.52051 5.72643Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 20 20" id="serieshome">
+        <path
+          d="M10 18H18V20H10C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20.0032 12.1642 19.3011 14.2705 18 16H15.292C16.6963 14.7616 17.6217 13.0698 17.907 11.2193C18.1924 9.36887 17.8197 7.47692 16.8538 5.87296C15.8879 4.26899 14.39 3.05463 12.6209 2.44134C10.8519 1.82805 8.92374 1.85468 7.1723 2.5166C5.42086 3.17852 3.95708 4.43379 3.03584 6.06382C2.1146 7.69385 1.79428 9.59537 2.13066 11.4372C2.46704 13.2791 3.4388 14.9447 4.87673 16.1439C6.31466 17.343 8.12766 17.9999 10 18ZM10 8C9.46957 8 8.96086 7.78929 8.58579 7.41421C8.21071 7.03914 8 6.53043 8 6C8 5.46957 8.21071 4.96086 8.58579 4.58579C8.96086 4.21071 9.46957 4 10 4C10.5304 4 11.0391 4.21071 11.4142 4.58579C11.7893 4.96086 12 5.46957 12 6C12 6.53043 11.7893 7.03914 11.4142 7.41421C11.0391 7.78929 10.5304 8 10 8ZM6 12C5.46957 12 4.96086 11.7893 4.58579 11.4142C4.21071 11.0391 4 10.5304 4 10C4 9.46957 4.21071 8.96086 4.58579 8.58579C4.96086 8.21071 5.46957 8 6 8C6.53043 8 7.03914 8.21071 7.41421 8.58579C7.78929 8.96086 8 9.46957 8 10C8 10.5304 7.78929 11.0391 7.41421 11.4142C7.03914 11.7893 6.53043 12 6 12ZM14 12C13.4696 12 12.9609 11.7893 12.5858 11.4142C12.2107 11.0391 12 10.5304 12 10C12 9.46957 12.2107 8.96086 12.5858 8.58579C12.9609 8.21071 13.4696 8 14 8C14.5304 8 15.0391 8.21071 15.4142 8.58579C15.7893 8.96086 16 9.46957 16 10C16 10.5304 15.7893 11.0391 15.4142 11.4142C15.0391 11.7893 14.5304 12 14 12ZM10 16C9.46957 16 8.96086 15.7893 8.58579 15.4142C8.21071 15.0391 8 14.5304 8 14C8 13.4696 8.21071 12.9609 8.58579 12.5858C8.96086 12.2107 9.46957 12 10 12C10.5304 12 11.0391 12.2107 11.4142 12.5858C11.7893 12.9609 12 13.4696 12 14C12 14.5304 11.7893 15.0391 11.4142 15.4142C11.0391 15.7893 10.5304 16 10 16Z"
+        ></path>
+         <symbol viewBox="0 0 24 25" id="search_icon">
+        <path
+          d="M11 2.5C15.968 2.5 20 6.532 20 11.5C20 16.468 15.968 20.5 11 20.5C6.032 20.5 2 16.468 2 11.5C2 6.532 6.032 2.5 11 2.5ZM11 18.5C14.867 18.5 18 15.367 18 11.5C18 7.632 14.867 4.5 11 4.5C7.132 4.5 4 7.632 4 11.5C4 15.367 7.132 18.5 11 18.5ZM18.778 19.278C19.1685 18.8875 19.8016 18.8875 20.1921 19.2779L21.6064 20.6916C21.9972 21.0823 21.9972 21.7158 21.6065 22.1065C21.2158 22.4972 20.5823 22.4972 20.1916 22.1064L18.7779 20.6921C18.3875 20.3016 18.3875 19.6685 18.778 19.278Z"
+        ></path>
+      </symbol>
+       <symbol viewBox="0 0 104 104" id="backtotop">
+        <path
+          d=" M 36.29 8.31 C 47.21 8.20 58.13 8.24 69.05 8.29 C 77.64 8.60 87.14 11.10 92.29 18.54 C 98.04 26.81 97.74 37.36 97.75 46.99 C 97.56 56.63 98.33 66.34 96.82 75.90 C 95.65 82.96 91.96 89.95 85.51 93.48 C 76.55 98.50 65.91 97.65 56.02 97.75 C 46.94 97.56 37.76 98.37 28.79 96.60 C 22.40 95.33 16.21 91.83 12.78 86.16 C 9.32 80.41 8.28 73.57 8.24 66.96 C 8.26 57.29 8.25 47.61 8.25 37.94 C 8.42 30.31 10.00 22.18 15.30 16.36 C 20.66 10.64 28.73 8.70 36.29 8.31 M 29.48 15.58 C 25.20 16.58 20.95 18.78 18.51 22.56 C 15.50 27.07 14.72 32.65 14.51 37.95 C 14.50 47.96 14.49 57.97 14.51 67.98 C 14.77 74.60 16.03 82.07 21.42 86.54 C 26.91 90.91 34.28 91.28 41.00 91.50 C 49.31 91.49 57.63 91.53 65.95 91.48 C 72.77 91.22 80.37 90.54 85.55 85.55 C 90.50 80.40 91.21 72.85 91.45 66.07 C 91.56 57.71 91.48 49.36 91.49 41.01 C 91.24 34.30 90.91 26.91 86.51 21.44 C 82.06 16.06 74.62 14.78 68.02 14.52 C 58.66 14.46 49.31 14.53 39.96 14.49 C 36.44 14.45 32.91 14.81 29.48 15.58 Z"
+        ></path>
+        <path
+          d=" M 50.49 42.38 C 51.73 40.77 54.23 40.85 55.49 42.39 C 60.34 47.24 65.27 52.02 70.01 56.98 C 72.45 59.35 68.99 63.63 66.14 61.82 C 61.57 57.73 57.43 53.14 53.00 48.88 C 48.76 53.00 44.72 57.33 40.40 61.36 C 37.94 63.84 33.72 60.53 35.46 57.54 C 40.34 52.37 45.50 47.45 50.49 42.38 Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 25 24" id="telegram_icon">
+        <path
+          d="M12.6514 20C14.7731 20 16.8079 19.1571 18.3082 17.6569C19.8085 16.1566 20.6514 14.1217 20.6514 12C20.6514 9.87827 19.8085 7.84344 18.3082 6.34315C16.8079 4.84285 14.7731 4 12.6514 4C10.5296 4 8.4948 4.84285 6.99451 6.34315C5.49422 7.84344 4.65137 9.87827 4.65137 12C4.65137 14.1217 5.49422 16.1566 6.99451 17.6569C8.4948 19.1571 10.5296 20 12.6514 20V20ZM12.6514 22C7.12837 22 2.65137 17.523 2.65137 12C2.65137 6.477 7.12837 2 12.6514 2C18.1744 2 22.6514 6.477 22.6514 12C22.6514 17.523 18.1744 22 12.6514 22ZM9.54137 13.17L7.04337 12.391C6.50337 12.226 6.50037 11.854 7.16437 11.587L16.8974 7.827C17.4624 7.597 17.7824 7.888 17.5994 8.617L15.9424 16.437C15.8264 16.994 15.4914 17.127 15.0264 16.87L12.4754 14.982L11.2864 16.13C11.1644 16.248 11.0654 16.349 10.8774 16.374C10.6904 16.4 10.5364 16.344 10.4234 16.034L9.55337 13.163L9.54137 13.171V13.17Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 25 24" id="instagram_icon">
+        <path
+          d="M12.501 9C11.7053 9 10.9423 9.31607 10.3797 9.87868C9.81705 10.4413 9.50098 11.2044 9.50098 12C9.50098 12.7956 9.81705 13.5587 10.3797 14.1213C10.9423 14.6839 11.7053 15 12.501 15C13.2966 15 14.0597 14.6839 14.6223 14.1213C15.1849 13.5587 15.501 12.7956 15.501 12C15.501 11.2044 15.1849 10.4413 14.6223 9.87868C14.0597 9.31607 13.2966 9 12.501 9ZM12.501 7C13.8271 7 15.0988 7.52678 16.0365 8.46447C16.9742 9.40215 17.501 10.6739 17.501 12C17.501 13.3261 16.9742 14.5979 16.0365 15.5355C15.0988 16.4732 13.8271 17 12.501 17C11.1749 17 9.90312 16.4732 8.96544 15.5355C8.02776 14.5979 7.50098 13.3261 7.50098 12C7.50098 10.6739 8.02776 9.40215 8.96544 8.46447C9.90312 7.52678 11.1749 7 12.501 7V7ZM19.001 6.75C19.001 7.08152 18.8693 7.39946 18.6349 7.63388C18.4004 7.8683 18.0825 8 17.751 8C17.4195 8 17.1015 7.8683 16.8671 7.63388C16.6327 7.39946 16.501 7.08152 16.501 6.75C16.501 6.41848 16.6327 6.10054 16.8671 5.86612C17.1015 5.6317 17.4195 5.5 17.751 5.5C18.0825 5.5 18.4004 5.6317 18.6349 5.86612C18.8693 6.10054 19.001 6.41848 19.001 6.75V6.75ZM12.501 4C10.027 4 9.62298 4.007 8.47198 4.058C7.68798 4.095 7.16198 4.2 6.67398 4.39C6.23998 4.558 5.92698 4.759 5.59398 5.093C5.28098 5.3954 5.04033 5.76458 4.88998 6.173C4.69998 6.663 4.59498 7.188 4.55898 7.971C4.50698 9.075 4.50098 9.461 4.50098 12C4.50098 14.474 4.50798 14.878 4.55898 16.029C4.59598 16.812 4.70098 17.339 4.88998 17.826C5.05998 18.261 5.25998 18.574 5.59198 18.906C5.92898 19.242 6.24198 19.443 6.67198 19.609C7.16598 19.8 7.69198 19.906 8.47198 19.942C9.57598 19.994 9.96198 20 12.501 20C14.975 20 15.379 19.993 16.53 19.942C17.312 19.905 17.839 19.8 18.327 19.611C18.76 19.442 19.075 19.241 19.407 18.909C19.744 18.572 19.945 18.259 20.111 17.829C20.301 17.336 20.407 16.809 20.443 16.029C20.495 14.925 20.501 14.539 20.501 12C20.501 9.526 20.494 9.122 20.443 7.971C20.406 7.189 20.301 6.661 20.111 6.173C19.9603 5.765 19.7201 5.39596 19.408 5.093C19.1057 4.77985 18.7365 4.53917 18.328 4.389C17.838 4.199 17.312 4.094 16.53 4.058C15.426 4.006 15.04 4 12.501 4ZM12.501 2C15.218 2 15.557 2.01 16.623 2.06C17.688 2.11 18.413 2.277 19.051 2.525C19.711 2.779 20.267 3.123 20.823 3.678C21.3315 4.1779 21.7249 4.78259 21.976 5.45C22.223 6.087 22.391 6.813 22.441 7.878C22.488 8.944 22.501 9.283 22.501 12C22.501 14.717 22.491 15.056 22.441 16.122C22.391 17.187 22.223 17.912 21.976 18.55C21.7257 19.2178 21.3321 19.8226 20.823 20.322C20.3229 20.8303 19.7183 21.2238 19.051 21.475C18.414 21.722 17.688 21.89 16.623 21.94C15.557 21.987 15.218 22 12.501 22C9.78398 22 9.44498 21.99 8.37898 21.94C7.31398 21.89 6.58898 21.722 5.95098 21.475C5.2833 21.2245 4.6785 20.8309 4.17898 20.322C3.67038 19.8222 3.27691 19.2175 3.02598 18.55C2.77798 17.913 2.61098 17.187 2.56098 16.122C2.51398 15.056 2.50098 14.717 2.50098 12C2.50098 9.283 2.51098 8.944 2.56098 7.878C2.61098 6.812 2.77798 6.088 3.02598 5.45C3.27621 4.78218 3.66978 4.17732 4.17898 3.678C4.67865 3.16923 5.2834 2.77573 5.95098 2.525C6.58898 2.277 7.31298 2.11 8.37898 2.06C9.44498 2.013 9.78398 2 12.501 2Z"
+        ></path>
+      </symbol>
+      <symbol viewBox="0 0 16 16" id="android">
+        <path
+          d="M5.6582 0.843933C5.5782 0.843933 5.49819 0.874548 5.43726 0.935486C5.31538 1.05736 5.31538 1.25551 5.43726 1.37738L6.25635 2.19647C5.3264 2.87888 4.7207 3.9769 4.7207 5.21893H12.2207C12.2207 3.9769 11.615 2.87888 10.6851 2.19647L11.5042 1.37738C11.626 1.25488 11.626 1.05799 11.5042 0.935486C11.3823 0.813611 11.1841 0.813611 11.0623 0.935486L10.1357 1.862C9.63359 1.61241 9.06957 1.46893 8.4707 1.46893C7.87183 1.46893 7.30782 1.61241 6.80566 1.862L5.87915 0.935486C5.81821 0.874548 5.7382 0.843933 5.6582 0.843933ZM6.5957 3.34393H7.2207V3.96893H6.5957V3.34393ZM9.7207 3.34393H10.3457V3.96893H9.7207V3.34393ZM3.4707 5.84393C3.1257 5.84393 2.8457 6.12393 2.8457 6.46893V10.2189C2.8457 10.5639 3.1257 10.8439 3.4707 10.8439C3.8157 10.8439 4.0957 10.5639 4.0957 10.2189V6.46893C4.0957 6.12393 3.8157 5.84393 3.4707 5.84393ZM4.7207 5.84393V10.8439C4.7207 11.1889 5.0007 11.4689 5.3457 11.4689H5.9707V13.6564C5.9707 14.1739 6.3907 14.5939 6.9082 14.5939C7.4257 14.5939 7.8457 14.1739 7.8457 13.6564V11.4689H9.0957V13.6564C9.0957 14.1739 9.5157 14.5939 10.0332 14.5939C10.5507 14.5939 10.9707 14.1739 10.9707 13.6564V11.4689H11.5957C11.9407 11.4689 12.2207 11.1889 12.2207 10.8439V5.84393H4.7207ZM13.4707 5.84393C13.1257 5.84393 12.8457 6.12393 12.8457 6.46893V10.2189C12.8457 10.5639 13.1257 10.8439 13.4707 10.8439C13.8157 10.8439 14.0957 10.5639 14.0957 10.2189V6.46893C14.0957 6.12393 13.8157 5.84393 13.4707 5.84393Z"
+        ></path>
+    </svg>
+    <header id="header">
+          <div class="navbar">
+            <img width="120" height="40"   src="https://binande.info/wp-content/themes/zarfilm185/images/zarfilm-logo-white.png" class="dark entered lazyloaded" alt="زرفیلم" title="زرفیلم" data-lazy-src="https://binande.info/wp-content/themes/zarfilm185/images/zarfilm-logo-white.png" data-ll-status="loaded">
+      <div class="nav-item-wrapper">
+        <div class="nav-item">دسته‌بندی‌ها</div>
+        <div class="mega-menu">
+          <div class="column">
+            <button class="icon-btn">📺 بخش‌ها</button>
+            <button class="icon-btn">🎬 ژانر فیلم</button>
+            <button class="icon-btn">📽️ ژانر سریال</button>
+          </div>
+
+          <div class="column">
+            <a href="#">فیلم‌ها (25,904)</a>
+            <a href="#">مستند (1,049)</a>
+            <a href="#">پیشنهادی (197)</a>
+            <a href="#">۲۵۰ سریال برتر</a>
+          </div>
+          <div class="column">
+            <a href="#">سریال‌ها (6,865)</a>
+            <a href="#">شخصیت‌ها (56,809)</a>
+            <a href="#">پخش آنلاین (24,788)</a>
+            <a href="#">۲۵۰ سریال برتر</a>
+          </div>
+          <div class="column">
+            <a href="#">انیمیشن (1,537)</a>
+            <a href="#">جدول باکس‌آفیس</a>
+            <a href="#">دوبله (9,680)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">هنرمندان</div>
+      <div class="nav-item">پخش آنلاین</div>
+      <div class="nav-item">خرید اشتراک</div>
+      <div class="nav-item">اپلیکیشن</div>
+        <div class="btn-area" onclick="jQuery(this).parent().toggleClass('open')">
+        <svg class="icon search_icon" style="margin-right: 690px
+        ; margin-top: 10px; background-color: #07080a; border-radius: 10px; height: 25px; width: 25px; fill: aliceblue;">
+            <use xlink:href="#search_icon"></use>
+        </svg>
+    </div>
+      <div class="dropdown">
+        <button class="button">ورود / عضویت</button>
+        <div class="menu">
+          <h4>ورود به سایت</h4>
+          <div>هنوز ثبت‌نام نکرده‌اید؟ <a href="#">ثبت‌نام</a></div>
+          <div class="special">
+            <span class="crown">👑</span>
+            <span>تعرفه‌های عضویت ویژه</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const navItem = document.querySelector(".nav-item-wrapper");
+      const megaMenu = document.querySelector(".mega-menu");
+
+      navItem.addEventListener("mouseenter", () => {
+        megaMenu.classList.add("open");
+      });
+
+      navItem.addEventListener("mouseleave", () => {
+        megaMenu.classList.remove("open");
+      });
+    </script>
+    </header>
+    
+    <section class="hero" dir="ltr"  >
+      
+      <img
+        src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp"
+        alt="Background"
+        class="hero-bg"
+      />
+      <div class="overlay-slider"></div>
+
+      <div class="hero-content">
+        <h1>Poker Face</h1>
+        <div class="imdb">
+          <svg ><use xlink:href="#IMDB"></use></svg>
+        </div>
+        <div class="rating">
+          <strong>7.8</strong>
+          <small>/10</small>
+        </div>
+      </div>
+
+      <div class="play-center-slider">
+        
+          <svg ><use xlink:href="#playcos"></use></svg>
+        
+      </div>
+
+      <div class="cards-slider">
+        <div class="card-slider">
+          <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Movie 1" />
+          <div class="play-small"></div>
+          <div class="overlay-icons">
+            <div class="icon-slider">
+              <svg id="mic-logo-slider">
+                <use xlink:href="#mic"></use>
+              </svg>
+            </div>
+            <div class="icon-slider">
+              <svg id="cc-logo-slider"><use xlink:href="#cc"></use></svg>
+            </div>
+          </div>
+          <div class="card-info-slider">
+            <span
+              >79%
+              <img
+                src="https://zarfilm.com/wp-content/themes/zarfilm185/images/biglogolight.png"
+                alt="zar-logo"
+                id="zar-logo-slider"
+            /></span>
+
+            <span>|</span>
+            <span
+              >7.8
+              <svg id="star-logo-slider">
+                <use xlink:href="#star_fill"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="card-slider">
+          <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Movie 1" />
+          <div class="play-small"></div>
+          <div class="overlay-icons">
+            <div class="icon-slider">
+              <svg id="mic-logo-slider">
+                <use xlink:href="#mic"></use>
+              </svg>
+            </div>
+            <div class="icon-slider">
+              <svg id="cc-logo-slider"><use xlink:href="#cc"></use></svg>
+            </div>
+          </div>
+          <div class="card-info-slider">
+            <span
+              >79%
+              <img
+                src="https://zarfilm.com/wp-content/themes/zarfilm185/images/biglogolight.png"
+                alt="zar-logo"
+                id="zar-logo-slider"
+            /></span>
+
+            <span>|</span>
+            <span
+              >7.8
+              <svg id="star-logo-slider">
+                <use xlink:href="#star_fill"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="card-slider">
+          <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Movie 1" />
+          <div class="play-small"></div>
+          <div class="overlay-icons">
+            <div class="icon-slider">
+              <svg id="mic-logo-slider">
+                <use xlink:href="#mic"></use>
+              </svg>
+            </div>
+            <div class="icon-slider">
+              <svg id="cc-logo-slider"><use xlink:href="#cc"></use></svg>
+            </div>
+          </div>
+          <div class="card-info-slider">
+            <span
+              >79%
+              <img
+                src="https://zarfilm.com/wp-content/themes/zarfilm185/images/biglogolight.png"
+                alt="zar-logo"
+                id="zar-logo-slider"
+            /></span>
+
+            <span>|</span>
+            <span
+              >7.8
+              <svg id="star-logo-slider">
+                <use xlink:href="#star_fill"></use>
+              </svg>
+            </span>
+          </div>
+        </div>
+    </section>
+      <section dir="rtl" class="mid" >
+
+    <div class="container-mid">
+      <div class="title-mid">
+        <div class="right-mid">
+          <div class="icon-right-mid">
+            <svg class="icon serieshome_icon-mid">
+              <use xlink:href="#serieshome"></use>
+            </svg>
+          </div>
+          <div class="text-right-mid">
+            <h3>سریال های در حال پخش</h3>
+            <span>آخرین سریال های بروز شده در زرفیلم</span>
+          </div>
+        </div>
+        <div class="left-mid">
+          <span class="text-left-mid">تمامی سریالها</span>
+          <span class="icon-left-mid"
+            ><svg class="icon icon_prev_icon-mid">
+              <use xlink:href="#left_arrows_slider"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+   
+      <div class="movies-mid">
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">love</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+        <div class="movie-mid">
+          <div class="cover-mid">
+            <div class="icon-bar-mid">
+              <div class="cc-mid">
+                <span>
+                  <svg class="icon-mid"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="play-mid">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="season-part-mid">
+              <div class="part-mid">jjjjjjj</div>
+              <div class="season-mid">mmmmmm</div>
+            </div>
+            <img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="" />
+          </div>
+          <span class="name-mid">The Gilded Age</span>
+        </div>
+      </div>
+    </div>
+    </section>
+    <section dir="rtl" class="new" >
+      <div class="newest">
+      <div class="title-newest">
+        <div class="right-side-newest">
+        <div class="icon-right-newest">
+            <svg class="icon serieshome_icon-newest">
+              <use xlink:href="#serieshome"></use>
+            </svg>
+          </div>
+          
+        <div class="text-right-newest">
+            <h3>جدیدترین فیلم ها</h3>
+            <span>آخرین فیلم های بروز شده در زر فیلم</span>
+          </div>
+        </div>
+      </div>
+        <div class="left-newest">
+          <span class="text-left-newest">تمامی فیلمها</span>
+          <span class="icon-left-newest">
+          <svg class="icon icon_prev_icon-newest">
+              <use xlink:href="#left_arrows_slider"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="videos-newest">
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Tracers"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Tracers"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">اکشن</span>
+              <span class="genre-newest">جنایی</span>
+              <span class="-newest">درام</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Tracers</div>
+            <div class="score-newest">
+              <span class="rate-newest">5.6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2015</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Detective Chainatown 1900"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Detective Chainatown 1900"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">رازآلود</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Detective Chainatown 1900</div>
+            <div class="score-newest">
+              <span class="rate-newest">6/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Blue Jay"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Blue Jay"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">درام</span>
+              <span class="genre-newest">عاشقانه</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Blue Jay</div>
+            <div class="score-newest">
+              <span class="rate-newest">7.3/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2016</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Drive Hard"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Drive Hard"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">اکشن</span>
+              <span class="genre-newest">جنایی</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Drive Hard</div>
+            <div class="score-newest">
+              <span class="rate-newest">4.3/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2014</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Eden"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Eden"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">هیجان انگیز</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Eden</div>
+            <div class="score">
+              <span class="rate-newest">6.3/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2024</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title="دانلود فیلم Death Of a Unicorn"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Death Of a Unicorn"
+            /></abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">ترسناک</span>
+              <span class="genre-newest">فانتزی</span>
+              <span class="genre-newest">کمدی</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Death Of a Unicorn</div>
+            <div class="score-newest">
+              <span class="rate-newest">5.9/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newest">2025</span>
+            </div>
+          </div>
+        </div>
+        <div class="video-newest">
+          <div class="pic-newest">
+            <abbr title=" دانلود فیلم Officer On Duty"
+              ><img src="f5540ed616b00bfeaf4b35c6eebfd6cf.webp" alt="Officer On Duty" />
+            </abbr>
+            <div class="icon-bar-newest">
+              <div class="right-newest">
+                <span class="mic-newest"
+                  ><svg class="icon-newest"><use xlink:href="#mic"></use></svg>
+                </span>
+                <span class="cc-newest"
+                  ><svg class="icon-newest"><use xlink:href="#cc"></use></svg>
+                </span>
+              </div>
+              <div class="left-newest">
+                <span class="play-newest"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="33.405"
+                    height="41.999"
+                    viewBox="0 0 33.405 41.999"
+                  >
+                    <path
+                      id="play-button-svgrepo-com"
+                      d="M38.439,20.176,7.19.176A1.154,1.154,0,0,0,6.077.114.992.992,0,0,0,5.5,1V41a.994.994,0,0,0,.577.886,1.152,1.152,0,0,0,1.113-.063l31.25-20a.96.96,0,0,0,0-1.646ZM8.2,38.1V3.9L34.93,21Z"
+                      transform="translate(-5.5 0)"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <div class="genres-newest">
+              <span class="genre-newest">هیجان انگیز</span>
+            </div>
+          </div>
+          <div class="definition-newest">
+            <div class="name-newest">Officer On Duty</div>
+            <div class="score-newest">
+              <span class="rate-newest">7.5/10</span>
+              <span class="line-newest">|</span>
+              <span class="year-newests">2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+    <footer class="footer" dir="rtl">
+      <div class="footer-right">
+       
+        <svg class="backtotop_icon"><use xlink:href="#backtotop"></use></svg></>
+        <a href="#">خرید اشتراک</a>
+        <a href="#">پخش آنلاین</a>
+        <a href="#">سوالات متداول</a>
+        <a href="#">قوانین</a>
+        <a href="#">تماس با ما</a>
+      </div>
+      <div style="display: flex">
+        <div class="footer-socials">
+          <svg class="footer-social">
+            <use xlink:href="#telegram_icon"></use>
+          </svg>
+          <svg class="footer-social">
+            <use xlink:href="#instagram_icon"></use>
+          </svg>
+        </div>
+        <button class="footer-download">
+          دانلود اپلیکیشن
+          <svg class="icon-android"><use xlink:href="#android"></use></svg>
+        </button>
+      </div>
+    </footer>
+    <script>
+window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) { // وقتی کاربر 50px اسکرول کرد
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
+  </body>
+</html>
