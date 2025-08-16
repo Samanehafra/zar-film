@@ -1,3 +1,7 @@
+@font-face {
+  font-family: yekan;
+  src: url("font/BYekan+.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +10,8 @@
 }
 header {
   background-color: black;
-  font-family: "Vazir", sans-serif;
+  font-family: yekan;
+  src: url("font/BYekan+.ttf") format("truetype");
   color: white;
   margin: 0;
   position: sticky;
