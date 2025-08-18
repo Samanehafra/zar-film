@@ -1,6 +1,6 @@
 @font-face {
   font-family: yekan;
-  src: url("/font/BYekan+.ttf") format("truetype");
+  src: url("Iranyekan.ttf") format("truetype");
 }
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 header {
   font-family: yekan;
-  src: url(/font/BYekan+.ttf);
+  src: url("Iranyekan.ttf") format("truetype");
   margin: 0;
   direction: rtl;
   color: white;
@@ -24,7 +24,7 @@ header {
 }
 .button {
   font-family: yekan;
-  src: url(/font/BYekan+.ttf);
+  src: url("Iranyekan.ttf") format("truetype");
   background-color: #82490d;
   color: white;
   padding: 13px 20px;
@@ -193,7 +193,7 @@ header {
 }
 body {
   font-family: yekan;
-  src: url(/font/BYekan+.ttf);
+  src: url("Iranyekan.ttf") format("truetype");
   background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.6),
