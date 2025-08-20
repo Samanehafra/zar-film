@@ -40,7 +40,7 @@ body {
   inset: 0;
   background: linear-gradient(
     270deg,
-    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 30%,
     rgba(0, 0, 0, 0.2) 100%,
     rgba(0, 0, 0, 0) 100%
   );
@@ -606,7 +606,7 @@ body {
 
 header {
   font-family: yekan;
-  src: url(/font/BYekan+.ttf);
+  src: url("Iranyekan.ttf") format("truetype");
   margin: 0;
   direction: rtl;
   color: white;
@@ -630,7 +630,7 @@ header.scrolled {
 }
 .button {
   font-family: yekan;
-  src: url(/font/BYekan+.ttf);
+  src: url("Iranyekan.ttf") format("truetype");
   background-color: #82490d;
   color: white;
   padding: 13px 20px;
