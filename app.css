@@ -489,7 +489,7 @@ span {
   justify-content: space-between;
   padding: 0 32px;
   z-index: 100;
-  margin-top: 500px;
+  margin-top: 300px;
 }
 .footer-right {
   display: flex;

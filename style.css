@@ -40,7 +40,7 @@ body {
   inset: 0;
   background: linear-gradient(
     270deg,
-    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0.9) 0%,
     rgba(0, 0, 0, 0.2) 100%,
     rgba(0, 0, 0, 0) 100%
   );
@@ -347,6 +347,7 @@ body {
   position: absolute;
   right: 100px;
   top: 90%;
+  z-index: 10;
 }
 .part-mid {
   align-content: center;
@@ -367,15 +368,6 @@ body {
   height: 30px;
   justify-content: center;
   padding: 0 10px;
-}
-.cover-mid {
-  position: relative;
-}
-
-.cover-mid img {
-  object-fit: cover;
-  border-radius: 15px;
-  width: 98%;
 }
 
 .name-mid {
@@ -613,7 +605,7 @@ header {
   padding: 0 2rem;
   border-top: 4px solid #eb8307;
   position: fixed;
-  z-index: 8;
+  z-index: 90;
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease,
     border-bottom 0.3s;
 }
@@ -633,26 +625,31 @@ header.scrolled {
   src: url("Iranyekan.ttf") format("truetype");
   background-color: #82490d;
   color: white;
-  padding: 13px 20px;
+  padding: 11px 15px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 14px;
   border: none;
   display: inline-block;
   white-space: nowrap;
+  margin-right: 10px;
 }
 
 .menu {
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
   display: none;
   position: absolute;
   top: 120%;
   right: 0;
-  background-color: rgba(30, 30, 30, 0.95);
+  background-color: rgba(30, 30, 30, 0.927);
   border-radius: 16px;
   padding: 20px;
-  width: 240px;
+  width: 200px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   z-index: 1000;
+  margin-right: -60px;
+  font-size: 14px;
 }
 .dropdown:hover .menu {
   display: block;
@@ -902,4 +899,30 @@ a:visited {
 }
 a:hover {
   color: #ffffff;
+}
+.cover-mid {
+  position: relative;
+
+  border-radius: 10px;
+}
+.cover-mid img {
+  display: block;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 15px;
+  width: 98%;
+}
+.cover-mid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  z-index: 1;
+}
+.cover-mid:hover::after {
+  opacity: 1;
 }
