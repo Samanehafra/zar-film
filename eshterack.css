@@ -7,64 +7,70 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 header {
-  background-color: black;
+  font-family: yekan;
   src: url("Iranyekan.ttf") format("truetype");
-  color: white;
   margin: 0;
+  direction: rtl;
+  color: white;
+  padding: 0 2rem;
+  border-top: 4px solid #eb8307;
   position: sticky;
-  top: 1px;
-  z-index: 4;
-  border-top: 4px solid #b56b17;
+  z-index: 90;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease,
+    border-bottom 0.3s;
 }
-.search {
-  background-color: #0c0c0c;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 5px;
-  position: absolute;
-  right: -50px;
+
+header.scrolled {
+  background-color: rgba(40, 40, 40, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
-.drop {
+.dropdown {
   position: relative;
   display: inline-block;
+  margin-right: auto;
 }
-
 .button {
-  margin-left: 20px;
-  background-color: #b56b17;
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
+  background-color: #82490d;
   color: white;
-  padding: 10px 20px;
+  padding: 11px 15px;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
   border: none;
-  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: 10px;
 }
+
 .menu {
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
   display: none;
   position: absolute;
-  top: 80px;
-  right: -100px;
-  background-color: rgba(30, 30, 30, 0.95);
+  top: 120%;
+  right: 0;
+  background-color: rgba(30, 30, 30, 0.927);
   border-radius: 16px;
   padding: 20px;
-  width: 240px;
+  width: 200px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
   z-index: 1000;
+  margin-right: -60px;
+  font-size: 14px;
 }
-
-.drop:hover .menu {
+.dropdown:hover .menu {
   display: block;
 }
-
 .menu h4 {
   margin: 0 0 1rem 0;
   font-weight: normal;
 }
-
 .menu a {
   color: orange;
   text-decoration: none;
@@ -73,71 +79,67 @@ header {
 .menu .special {
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid rgba(191, 189, 189, 0.2);
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
-
 .crown {
   font-size: 18px;
 }
-header {
-  background-color: #000;
-  margin: 0;
-  font-family: "Vazir", sans-serif;
-
-  color: white;
-}
-
 .navbar {
   display: flex;
-  gap: 40px;
   padding: 1rem 2rem;
-  background-color: #0f0f0f;
   position: relative;
   z-index: 10;
 }
 
 .nav-item-wrapper {
   position: relative;
+  display: inline-block;
 }
-.drop {
-  margin-right: auto;
-}
-
 .nav-item {
-  font-size: 14px;
-  font-weight: 500;
+  color: #b8b8b88f;
+  padding-right: 0;
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  font: inherit;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.796);
+  padding: 10px 15px;
   cursor: pointer;
 }
-
 .mega-menu {
   display: none;
   position: absolute;
   top: 50px;
   right: 0;
-  background: rgba(30, 30, 30, 0.95);
   border-radius: 16px;
   padding: 25px 30px;
-  width: 950px;
+  width: 860px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
-  z-index: 100;
+  z-index: 15;
+  background-color: rgb(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
-
 .nav-item-wrapper:hover .mega-menu {
   display: flex;
 }
-
 .column {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 32%;
+  padding: 15px;
 }
-
 .column a {
   color: #fff;
   text-decoration: none;
@@ -148,7 +150,6 @@ header {
   justify-content: space-between;
   margin-bottom: 24px;
 }
-
 .column a::before {
   content: "";
   position: absolute;
@@ -159,12 +160,10 @@ header {
   height: 16px;
   background-color: orange;
 }
-
 .column span {
   color: #aaa;
   font-size: 13px;
 }
-
 .highlight {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -172,7 +171,6 @@ header {
   font-weight: bold;
   color: white;
 }
-
 .icon-btn {
   background-color: #091321;
   border: none;
@@ -186,36 +184,6 @@ header {
   align-items: center;
   gap: 8px;
 }
-body {
-  font-family: Arial, sans-serif;
-}
-
-.navbar {
-  background-color: #000000;
-  padding: 10px;
-  position: relative;
-}
-
-.nav-item-wrapper {
-  position: relative;
-  display: inline-block;
-}
-
-.nav-item {
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.mega-menu {
-  display: none;
-  position: absolute;
-  background-color: #0b1829ee;
-  z-index: 1;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
 .mega-menu.open {
   display: block;
   opacity: 1;
@@ -223,23 +191,20 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
-.column {
-  padding: 15px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.menu {
-  display: none;
+a:visited {
+  color: inherit;
 }
-.drop:hover .menu {
-  display: block;
+a:hover {
+  color: #ffffff;
 }
-
-/*@font-face {
-  font-family: yekan;
-  src: url("font/BYekan+.ttf") format("truetype");
-}*/
 
 body {
-  font-family: sans-serif;
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
   background-color: black;
 }
 #container {
@@ -254,10 +219,9 @@ body {
   color: #fff;
   padding-top: 10px;
   background-color: #910909;
-  border-radius: 20px;
+  border-radius: 38px;
   height: 7vh;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  margin-top: 10px;
 }
 .info {
   display: flex;
@@ -266,7 +230,7 @@ body {
   background-color: rgb(23, 27, 36);
   box-shadow: 2px 2px #0c0c0c;
   border-radius: 20px;
-  height: 75vh;
+  height: 70vh;
   align-items: center;
 }
 .helicopter,
@@ -306,10 +270,7 @@ body {
   width: 40%;
   color: #fff;
 }
-/*svg {
-  overflow: hidden;
-  vertical-align: middle;
-}*/
+
 .icon img {
   height: 80%;
   margin-top: 35px;
@@ -431,7 +392,8 @@ strong {
   justify-content: space-between;
   padding: 0 32px;
   z-index: 100;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+  margin-top: -50px;
 }
 .footer-right {
   display: flex;
