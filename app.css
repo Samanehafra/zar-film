@@ -189,10 +189,6 @@ header {
   align-items: center;
   gap: 8px;
 }
-body {
-  font-family: Arial, sans-serif;
-}
-
 .navbar {
   background-color: #000000;
   padding: 10px;
@@ -242,6 +238,8 @@ body {
   color: #fff;
   background-color: black;
   scrollbar-width: none;
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
 }
 span {
   color: #e98309;

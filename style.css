@@ -619,6 +619,7 @@ header.scrolled {
 .dropdown {
   position: relative;
   display: inline-block;
+  margin-right: auto;
 }
 .button {
   font-family: yekan;
@@ -676,7 +677,6 @@ header.scrolled {
 }
 .navbar {
   display: flex;
-
   padding: 1rem 2rem;
   position: relative;
   z-index: 10;
@@ -684,9 +684,7 @@ header.scrolled {
 
 .nav-item-wrapper {
   position: relative;
-}
-.dropdown {
-  margin-right: auto;
+  display: inline-block;
 }
 .nav-item {
   color: #b8b8b88f;
@@ -697,20 +695,28 @@ header.scrolled {
   white-space: nowrap;
   font: inherit;
   font-size: 13px;
+  color: rgba(255, 255, 255, 0.796);
+  padding: 10px 15px;
+  cursor: pointer;
 }
 .mega-menu {
   display: none;
   position: absolute;
   top: 50px;
   right: 0;
-  background: rgba(30, 30, 30, 0.95);
   border-radius: 16px;
   padding: 25px 30px;
-  width: 950px;
+  width: 860px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: space-between;
   z-index: 15;
+  background-color: rgb(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 .nav-item-wrapper:hover .mega-menu {
   display: flex;
@@ -720,6 +726,7 @@ header.scrolled {
   flex-direction: column;
   gap: 12px;
   width: 32%;
+  padding: 15px;
 }
 .column a {
   color: #fff;
@@ -765,30 +772,6 @@ header.scrolled {
   align-items: center;
   gap: 8px;
 }
-.navbar {
-  position: relative;
-}
-.nav-item-wrapper {
-  position: relative;
-  display: inline-block;
-}
-.nav-item {
-  color: rgba(255, 255, 255, 0.796);
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.mega-menu {
-  display: none;
-  position: absolute;
-  background-color: rgb(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  z-index: 1;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
 .mega-menu.open {
   display: block;
   opacity: 1;
@@ -796,14 +779,15 @@ header.scrolled {
   font-size: 16px;
   font-weight: bold;
 }
-.column {
-  padding: 15px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.menu {
-  display: none;
+a:visited {
+  color: inherit;
 }
-.dropdown:hover .menu {
-  display: block;
+a:hover {
+  color: #ffffff;
 }
 .footer {
   font-family: yekan;
@@ -890,16 +874,7 @@ header.scrolled {
   fill: #e08011;
   cursor: pointer;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-}
-a:visited {
-  color: inherit;
-}
-a:hover {
-  color: #ffffff;
-}
+
 .cover-mid {
   position: relative;
 

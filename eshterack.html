@@ -9,8 +9,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Playpen+Sans+Arabic:wght@100..800&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
   </head>
-    <header dir="rtl">
-    <div class="navbar">
+        <header id="header">
+          <div class="navbar">
+            <img width="120" height="40"   src="https://binande.info/wp-content/themes/zarfilm185/images/zarfilm-logo-white.png" class="dark entered lazyloaded" alt="زرفیلم" title="زرفیلم" data-lazy-src="https://binande.info/wp-content/themes/zarfilm185/images/zarfilm-logo-white.png" data-ll-status="loaded">
       <div class="nav-item-wrapper">
         <div class="nav-item">دسته‌بندی‌ها</div>
         <div class="mega-menu">
@@ -39,47 +40,22 @@
           </div>
         </div>
       </div>
-
-      <!-- سایر منوها -->
-      <div class="nav-item">هنرمندان</div>
-      <div class="nav-item">پخش آنلاین</div>
-      <div class="nav-item">خرید اشتراک</div>
-      <div class="nav-item">اپلیکیشن</div>
-
-      <!-- منوی ورود/عضویت در انتهای منو -->
-      <div class="drop">
-        <svg
-          class="search"
-          xmlns="http://www.w3.org/2000/svg"
-          x="0px"
-          y="0px"
-          width="100"
-          height="100"
-          viewBox="0,0,256,256"
-        >
-          <g
-            fill="#ffffff"
-            fill-rule="nonzero"
-            stroke="none"
-            stroke-width="1"
-            stroke-linecap="butt"
-            stroke-linejoin="miter"
-            stroke-miterlimit="10"
-            stroke-dasharray=""
-            stroke-dashoffset="0"
-            font-family="none"
-            font-weight="none"
-            font-size="none"
-            text-anchor="none"
-           
-          >
-            <g transform="scale(4,4)">
-              <path
-                d="M27,9c-9.925,0 -18,8.075 -18,18c0,9.925 8.075,18 18,18c4.12921,0 7.9263,-1.41263 10.9668,-3.75977l13.08203,13.08203c0.904,0.904 2.36944,0.904 3.27344,0c0.904,-0.904 0.904,-2.36944 0,-3.27344l-13.08203,-13.08203c2.34713,-3.0405 3.75977,-6.83758 3.75977,-10.9668c0,-9.925 -8.075,-18 -18,-18zM27,13c7.719,0 14,6.281 14,14c0,7.719 -6.281,14 -14,14c-7.719,0 -14,-6.281 -14,-14c0,-7.719 6.281,-14 14,-14z"
-              ></path>
-            </g>
-          </g>
+      <div class="nav-item">
+        <a href="artist.html">هنرمندان</a>
+        </div>
+      <div class="nav-item">
+        <a href="onlin.html">پخش آنلاین</a></div>
+      <div class="nav-item">
+        <a href="eshterack.html" >خرید اشتراک</a></div>
+      <div class="nav-item">
+        <a href="app.html" >اپلیکیشن</a></div>
+        <div class="btn-area" onclick="jQuery(this).parent().toggleClass('open')">
+       <svg class="icon search_icon" style="margin-right: 660px;
+ margin-top: 10px; background-color: #07080a; border-radius: 10px; height: 25px; width: 25px; fill: aliceblue; padding: 3px 3px 3px 3px; ">
+            <use xlink:href="#search_icon"></use>
         </svg>
+    </div>
+      <div class="dropdown">
         <button class="button">ورود / عضویت</button>
         <div class="menu">
           <h4>ورود به سایت</h4>
@@ -91,7 +67,6 @@
         </div>
       </div>
     </div>
-
     <script>
       const navItem = document.querySelector(".nav-item-wrapper");
       const megaMenu = document.querySelector(".mega-menu");
@@ -104,7 +79,7 @@
         megaMenu.classList.remove("open");
       });
     </script>
-  </header>
+    </header>
   <body>
     <div id="container">
       <div class="note">

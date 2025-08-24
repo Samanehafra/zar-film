@@ -160,7 +160,7 @@
         ></path>
       </symbol>
     </svg>
-    <header>
+    <header id="header">
       <div class="navbar">
         <img
           width="120"
@@ -200,10 +200,18 @@
             </div>
           </div>
         </div>
-        <div class="nav-item">هنرمندان</div>
-        <div class="nav-item">پخش آنلاین</div>
-        <div class="nav-item">خرید اشتراک</div>
-        <div class="nav-item">اپلیکیشن</div>
+        <div class="nav-item">
+          <a href="artist.html">هنرمندان</a>
+        </div>
+        <div class="nav-item">
+          <a href="onlin.html">پخش آنلاین</a>
+        </div>
+        <div class="nav-item">
+          <a href="eshterack.html">خرید اشتراک</a>
+        </div>
+        <div class="nav-item">
+          <a href="app.html">اپلیکیشن</a>
+        </div>
         <div
           class="btn-area"
           onclick="jQuery(this).parent().toggleClass('open')"
@@ -211,12 +219,14 @@
           <svg
             class="icon search_icon"
             style="
-              margin-right: 690px;
+              margin-right: 660px;
               margin-top: 10px;
               background-color: #07080a;
               border-radius: 10px;
-              height: 30px;
-              width: 30px;
+              height: 25px;
+              width: 25px;
+              fill: aliceblue;
+              padding: 3px 3px 3px 3px;
             "
           >
             <use xlink:href="#search_icon"></use>
@@ -234,6 +244,18 @@
           </div>
         </div>
       </div>
+      <script>
+        const navItem = document.querySelector(".nav-item-wrapper");
+        const megaMenu = document.querySelector(".mega-menu");
+
+        navItem.addEventListener("mouseenter", () => {
+          megaMenu.classList.add("open");
+        });
+
+        navItem.addEventListener("mouseleave", () => {
+          megaMenu.classList.remove("open");
+        });
+      </script>
     </header>
     <div class="container">
       <div class="top-right">
@@ -499,18 +521,6 @@
       <br />
       <br />
       <br />
-      <script>
-        const navItem = document.querySelector(".nav-item-wrapper");
-        const megaMenu = document.querySelector(".mega-menu");
-
-        navItem.addEventListener("mouseenter", () => {
-          megaMenu.classList.add("open");
-        });
-
-        navItem.addEventListener("mouseleave", () => {
-          megaMenu.classList.remove("open");
-        });
-      </script>
     </div>
     <footer class="footer">
       <div class="footer-right">
