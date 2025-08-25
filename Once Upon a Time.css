@@ -10,7 +10,7 @@
 html {
   border-top: 4px solid #eb8307;
 }
-header {
+/*header {
   font-family: yekan;
   src: url("Iranyekan.ttf") format("truetype");
   margin: 0;
@@ -190,7 +190,7 @@ header {
 }
 .dropdown:hover .menu {
   display: block;
-}
+}*/
 body {
   font-family: yekan;
   src: url("Iranyekan.ttf") format("truetype");

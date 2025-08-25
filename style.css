@@ -334,6 +334,7 @@ body {
 .play-mid svg {
   width: 11px;
   fill: #fff;
+  padding-top: 7px;
 }
 .season-part-mid {
   align-content: center;
