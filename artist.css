@@ -8,6 +8,8 @@ body {
   font-family: sans-serif;
   color: white;
   margin: 0;
+  font-family: yekan;
+  src: url("Iranyekan.ttf") format("truetype");
 }
 
 header {

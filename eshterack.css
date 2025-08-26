@@ -165,7 +165,7 @@ header.scrolled {
   font-size: 13px;
 }
 .highlight {
-  margin-top: 1rem;
+  margin-top: 100px;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   font-weight: bold;
@@ -230,14 +230,14 @@ body {
   background-color: rgb(23, 27, 36);
   box-shadow: 2px 2px #0c0c0c;
   border-radius: 20px;
-  height: 70vh;
+  height: 62vh;
   align-items: center;
 }
 .helicopter,
 #vip,
 #ship,
 .submarine {
-  height: 70%;
+  height: 80%;
   width: 20vw;
   border: 1px #eb8307;
   border-radius: 20px;
@@ -245,10 +245,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 10px;
   gap: 10px;
 }
 #ship {
-  height: 60%;
+  height: 70%;
   gap: 15px;
   padding-bottom: 40px;
 }
@@ -273,18 +274,18 @@ body {
 
 .icon img {
   height: 80%;
-  margin-top: 35px;
+  margin-top: 20px;
   width: 75%;
 }
 #icon img {
-  height: 70%;
-  margin-top: 40px;
+  height: 60%;
+  margin-top: 30px;
   margin-bottom: 10px;
   width: 65%;
 }
 #icon-one img {
   height: 75%;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 10px;
   width: 70%;
 }
@@ -294,6 +295,10 @@ small {
 }
 strong {
   color: #eb8307;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  gap: 5px;
 }
 .time {
   background-color: rgb(21, 25, 34);
@@ -317,6 +322,7 @@ strong {
   padding: 0 10px;
   font-size: 25px;
   color: #fff;
+  margin-bottom: 10px;
 }
 .last-price::before {
   content: "";
@@ -382,7 +388,6 @@ strong {
 }
 
 .footer {
-  bottom: 0;
   right: 0;
   left: 0;
   background: #0b1829ee;
@@ -392,8 +397,7 @@ strong {
   justify-content: space-between;
   padding: 0 32px;
   z-index: 100;
-  margin-bottom: 25px;
-  margin-top: -50px;
+  margin-top: 23px;
 }
 .footer-right {
   display: flex;

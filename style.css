@@ -385,6 +385,32 @@ body {
   justify-content: center;
 }
 
+.cover-mid {
+  position: relative;
+
+  border-radius: 10px;
+}
+.cover-mid img {
+  display: block;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border-radius: 15px;
+  width: 98%;
+}
+.cover-mid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  z-index: 1;
+}
+.cover-mid:hover::after {
+  opacity: 1;
+}
 .newest {
   width: 100%;
   align-content: center;
@@ -874,31 +900,4 @@ a:hover {
   height: 22px;
   fill: #e08011;
   cursor: pointer;
-}
-
-.cover-mid {
-  position: relative;
-
-  border-radius: 10px;
-}
-.cover-mid img {
-  display: block;
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  border-radius: 15px;
-  width: 98%;
-}
-.cover-mid::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-  z-index: 1;
-}
-.cover-mid:hover::after {
-  opacity: 1;
 }
